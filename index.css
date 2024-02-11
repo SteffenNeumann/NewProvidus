@@ -1934,6 +1934,7 @@
   flex-shrink: 0;
   max-width: 100%;
 }
+/*TODO Stellen CSS*/
 .frame-anforderung {
   flex: 1;
   border-radius: var(--br-5xs);
@@ -1948,19 +1949,29 @@
   min-width: 298px;
   max-width: 100%;
 }
-.ihre-aufgaben {
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 600;
+.header-stellen {
+  font-family: inherit;
+  font-size: inherit;
+  margin-bottom: 16px;
+  font-weight: 400;
 }
-.blank-line5 {
+.stellen-list{
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 20px;
+
+}
+.stellen-list li {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 100;
   font-size: var(--font-size-base);
-  font-family: var(--font-inter);
+  line-height: 20.8px;
+  font-family: var(--font-roboto);
 }
-.blank-line6,
-.blank-line7,
-.blank-line8,
+
 .das-stellen-von-medikamenten-n,
 .fachliche-anleitung-von-pflege,
 .ganzheitliche-pflege-unserer-p,
