@@ -135,20 +135,26 @@
 								<h1 class="einfach-gut-helfen">einfach gut helfen</h1>
 							</div>
 							<div class="button-service-parent">
-								<button class="button-service">
-									<div class="service2">SERVICE</div>
+								<!-- TODO: Hover bearbeiten -->
+								<button
+									onclick="scrollToFrameBesterService()"
+									class="btn-1">
+									<span class="">SERVICE</span>
 								</button>
-								<button class="button-kontact">
-									<div class="kontakt1">KONTAKT</div>
+
+								<button 
+								onclick="scrollToFrameKontakt()" 
+								class="btn-1">
+									<span class="">KONTAKT</span>
 								</button>
 							</div>
 						</div>
-						<div class="cursor-wrapper">
+						<!-- <div class="cursor-wrapper">
 							<div class="cursor">
 								<b class="i">I</b>
 								<div class="cursor-child"></div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
@@ -868,6 +874,17 @@
 			window.addEventListener("scroll", reveal);
 		</script>
 		<script>
+			function scrollToFrameBesterService() {
+				document
+					.getElementById("frameBesterService")
+					.scrollIntoView({ behavior: "smooth" });
+			}
+			function scrollToFrameKontakt() {
+				document
+					.getElementById("contact")
+					.scrollIntoView({ behavior: "smooth" });
+			}
+
 			var frameBesterService = document.getElementById("frameBesterService");
 			if (frameBesterService) {
 				frameBesterService.addEventListener("click", function () {
