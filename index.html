@@ -6,6 +6,7 @@
 		<meta name="viewport" content="initial-scale=1, width=device-width" />
 
 		<link rel="stylesheet" href="./global.css" />
+		<link rel="stylesheet" href="./media.css" />
 		<link rel="stylesheet" href="./index.css" />
 		<link
 			rel="stylesheet"
@@ -28,25 +29,13 @@
 
 	<body>
 		<main id="main" class="main-content" role="main">
-			<!--<div class="header-frame">-->
-
-			<!-- <header class="header">
-				<img
-					onclick="window.location.href='./index.html'"
-					class="p-logo1-1-icon"
-					loading="eager"
-					alt=""
-					src="./public/p-logo1-1@2x.png" />
-			</header> -->
-			<!--TODO Menu-->
-			<!--MOD: New Navbar --->
 			<button onclick="goToTop()" id="back-to-top" title="Go to top">
 				<i class="fa fa-toggle-up"></i>
 			</button>
+			<!-- SECTION : Navigation -->
 			<section class="navigation w3-metro-light-blue w3-container">
 				<nav class="nav-container">
 					<div class="logo">
-						<!--<p onclick="window.location.href='./index.html'"> interdesk</p>-->
 						<img
 							class="p-logo1-1-icon"
 							loading="eager"
@@ -67,6 +56,7 @@
 						<a href="#jobs">Stellenangebote</a>
 						<a href="#contact">Kontakt</a>
 					</div>
+					<!-- FIXME : Mobile NAV anpassen -->
 					<div id="mobile-sidenav" class="mobile-links">
 						<a
 							href="javascript:void(0)"
@@ -83,43 +73,8 @@
 					</div>
 				</nav>
 			</section>
-
-			<!--MOD: END-->
-			<!--<section class="FrMenu">
-				<div class="text-area">
-					<div class="willkommen">
-						<p class="willkommen1">Willkommen</p>
-					</div>
-					<div class="service">
-						<p class="service1">Service</p>
-					</div>
-					<div class="netzwerk">Netzwerk</div>
-					<div class="pflegegrad">
-						<p class="pflegegrad1">Pflegegrad</p>
-					</div>
-					<div class="team">Team</div>
-					<div class="stellenangebote">Stellenangebote</div>
-					<div class="kontakt">Kontakt</div>
-				</div>
-			</section>
-
-			<nav class="hamburger-menu">
-				<div class="hamburger-icon">
-					<span>Klicjk</span>
-				</div>
-
-				<ul>
-					<li><a href="#">Willkommen</a></li>
-					<li><a href="#">Service</a></li>
-					<li><a href="#">Netzwerk</a></li>
-					<li><a href="#">Pflegegrad</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Stellenangebote</a></li>
-					<li><a href="#">Kontakt</a></li>
-				</ul>
-			</nav>
-    -->
-			<!--</div>--->
+			<!-- !SECTION  -->
+			<!-- SECTION : Willkommen -->
 			<section id="Willkommen" class="section">
 				<div class="frame-wellcome">
 					<div class="card">
@@ -135,7 +90,7 @@
 								<h1 class="einfach-gut-helfen">einfach gut helfen</h1>
 							</div>
 							<div>
-								<!-- TODO: Hover bearbeiten -->
+								<!-- FIXME  : Hover bearbeiten Scoll to Top Button wird mit angetriggert-->
 								<button onclick="scrollToFrameBesterService()" class="btn-1">
 									<span class="">SERVICE</span>
 								</button>
@@ -154,6 +109,8 @@
 					</div>
 				</div>
 			</section>
+			<!-- !SECTION  -->
+			<!-- SECTION : Service -->
 			<section id="frameBesterService" class="section">
 				<div class="main-frame">
 					<div class="parent-node-line-parent">
@@ -265,6 +222,8 @@
 						data-scroll-to="frameBesterService"></div>
 				</div>
 			</section>
+			<!-- !SECTION  -->
+			<!-- SECTION : Network -->
 			<section id="network" class="section">
 				<div class="mild-independence">
 					<div class="significant-impact">
@@ -413,8 +372,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- !SECTION  -->
+			<!-- SECTION : Pflege -->
 			<section id="pflege" class="section">
-				<!--TODO: Scoll anpassen, Menu Sprungmarke ist zu tief ↑ -->
 				<div class="main-frame">
 					<div class="fr-about">
 						<div class="pflegegrad-info">
@@ -595,6 +555,8 @@
 					</div>
 				</div>
 			</section>
+			<!-- !SECTION  -->
+			<!-- SECTION : About -->
 			<section id="about" class="section">
 				<div class="your-profile">
 					<div class="fr-about1">
@@ -638,7 +600,8 @@
 					</div>
 				</div>
 			</section>
-			<!-- TODO Stellen-->
+			<!-- !SECTION  -->
+			<!-- SECTION : Jobs-->
 			<section id="jobs" class="section">
 				<div class="container-jobs">
 					<div class="jobs">
@@ -724,6 +687,8 @@
 					</div>
 				</div>
 			</section>
+			<!-- !SECTION  -->
+			<!-- SECTION : Contact -->
 			<section id="contact" class="section">
 				<div class="frame-impressum">
 					<div class="group-name-email-nachricht">
@@ -772,6 +737,8 @@
 					</div>
 				</div>
 			</section>
+			<!-- !SECTION  -->
+			<!-- SECTION : Footer -->
 			<footer class="fr-impressum">
 				<img class="p-logo1-1-icon1" alt="" src="./public/p-logo1-1@2x.png" />
 
@@ -792,6 +759,8 @@
 				</div>
 			</footer>
 		</main>
+		<!-- !SECTION  -->
+		<!-- SECTION : SCRIPTS -->
 		<script async>
 			const backToTop = document.getElementById("back-to-top");
 
@@ -893,5 +862,6 @@
 				});
 			}
 		</script>
+		<!-- !SECTION  -->
 	</body>
 </html>

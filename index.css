@@ -29,7 +29,7 @@ html {
 	left: 106px;
 	object-fit: cover;
 }
-.header {
+/* .header {
 	width: 100%;
 	height: 17px;
 	top: 8px;
@@ -39,8 +39,8 @@ html {
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: flex-start;
-}
-.frmenu {
+} */
+/* .frmenu {
 	display: flex;
 	width: 1440px;
 	height: 51px;
@@ -93,7 +93,7 @@ html {
 .kontakt {
 	height: 13px;
 	display: inline-block;
-}
+} */
 /* TODO Menu CSS*/
 /* MOD: New Navbar CSS */
 /*Navigation*/
@@ -118,7 +118,7 @@ html {
 	border-radius: 50%;
 }
 
-/*Navigation*/
+/* SECTION Navigation*/
 
 .navigation {
 	width: 100%;
@@ -286,81 +286,6 @@ background: #c1c1c1;
 	transform-origin: 0 50%;
 }
 
-@media (max-width: 800px) {
-	.footer-content {
-		flex-direction: column;
-		justify-content: center;
-	}
-}
-@media screen and (max-width: 1200px) {
-	.container {
-		width: 80%;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.nav-container {
-		width: 100%;
-	}
-
-	.container {
-		width: 90%;
-	}
-
-	.nav-container .links {
-		display: none;
-	}
-
-	.mobile-button {
-		display: flex;
-		width: 100%;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
-	.mobile-button div {
-		font-size: var(--font-x-large);
-	}
-
-	.mobile-links-active {
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.content.container,
-	.leadership-content.container {
-		width: 100%;
-	}
-
-	.container {
-		width: 80%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	html,
-	body {
-		overflow-x: none;
-	}
-
-	#back-to-top {
-		display: none !important;
-	}
-
-	.navigation {
-		position: sticky;
-		top: 0;
-		z-index: 999;
-		background: rgba(252, 252, 252, 1) !important;
-	}
-
-	.mobile-links .closebtn {
-		margin-right: 0;
-	}
-
-	/*letter-spacing: 1px;*/
-}
 /*.FrMenu,
 .text-area {
 	display: flex;
@@ -487,6 +412,92 @@ background: #c1c1c1;
 	display: block;
 	scroll-margin-top: var(--nav-height);
 }
+/* SECTION: Willkommen */
+.button-service-parent,
+.p-flegegrad {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.button-service-parent {
+	width: 264px;
+	flex-direction: row;
+	gap: var(--gap-5xl);
+}
+.p-flegegrad {
+	flex-direction: column;
+	gap: var(--gap-27xl);
+	max-width: 100%;
+	z-index: 2;
+}
+.cursor-child,
+.i {
+	position: relative;
+}
+.cursor-child {
+	height: 45px;
+	width: 25px;
+	border-radius: var(--br-6xl);
+	background-color: var(--color-gainsboro-200);
+	border: 1px solid var(--color-white);
+	box-sizing: border-box;
+	display: none;
+}
+.cursor,
+.cursor-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+.cursor {
+	border-radius: var(--br-6xl);
+	background-color: var(--color-gainsboro-200);
+	border: 1px solid var(--color-white);
+	align-items: center;
+	justify-content: center;
+	padding: 13px var(--padding-3xs);
+	z-index: 1;
+}
+.cursor-wrapper {
+	width: 473px;
+	align-items: flex-start;
+	justify-content: flex-end;
+	max-width: 100%;
+	text-align: center;
+	font-size: var(--font-size-base);
+	color: var(--color-white);
+	font-family: var(--font-inter);
+}
+.card,
+.frame-wellcome {
+	display: flex;
+	align-items: center;
+	max-width: 100%;
+	height: var(--section-midheight);
+}
+.card {
+	flex: 1;
+	flex-direction: column;
+	/* justify-content: flex-start; */
+	padding: 182px 557px 78px var(--padding-xl);
+	box-sizing: border-box;
+	position: relative;
+	gap: var(--gap-40xl);
+	background-image: url(./public/twopeopleholdinghandstogetherwithlovewarmthwoodentable-115026175-1@2x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.frame-wellcome {
+	align-self: stretch;
+	overflow: hidden;
+	flex-direction: row;
+	justify-content: center;
+	z-index: 3;
+	text-align: left;
+	font-size: 60px;
+	color: var(--color-mediumaquamarine-100);
+	font-family: var(--font-roboto);
+}
 .two-people-holding-hands-toget-icon {
 	width: 1440px;
 	position: relative;
@@ -533,7 +544,7 @@ background: #c1c1c1;
 	justify-content: center;
 	gap: var(--gap-5xs);
 }
-.service2 {
+/* .service2 {
 	display: block;
 	position: relative;
 	font-size: var(--font-size-sm);
@@ -541,7 +552,7 @@ background: #c1c1c1;
 	font-family: var(--font-inter);
 	color: var(--color-white);
 	text-align: center;
-}
+} */
 /* .button-service {
 	cursor: pointer;
 	border: 1px solid var(--color-white);
@@ -568,7 +579,7 @@ button {
 	margin: 20px 30px;
 	background: rgba(250, 248, 248, 0.09);
 }
-#Willkommen span {
+span {
 	display: block;
 	/* position: relative; */
 	font-size: var(--font-size-sm);
@@ -642,7 +653,7 @@ button:hover span::after {
 .btn-1:hover span::after {
 	transition-delay: 0.2s;
 }
-/* END */
+/* SECTION : END Wellcome */
 /* .button-service::before,
 .button-service::after {
 	content: "";
@@ -732,91 +743,7 @@ button:hover span::after {
 .button-kontact:hover {
 	background-color: transparent;
 }
-.button-service-parent,
-.p-flegegrad {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-.button-service-parent {
-	width: 264px;
-	flex-direction: row;
-	gap: var(--gap-5xl);
-}
-.p-flegegrad {
-	flex-direction: column;
-	gap: var(--gap-27xl);
-	max-width: 100%;
-	z-index: 2;
-}
-.cursor-child,
-.i {
-	position: relative;
-}
-.cursor-child {
-	height: 45px;
-	width: 25px;
-	border-radius: var(--br-6xl);
-	background-color: var(--color-gainsboro-200);
-	border: 1px solid var(--color-white);
-	box-sizing: border-box;
-	display: none;
-}
-.cursor,
-.cursor-wrapper {
-	display: flex;
-	flex-direction: row;
-}
-.cursor {
-	border-radius: var(--br-6xl);
-	background-color: var(--color-gainsboro-200);
-	border: 1px solid var(--color-white);
-	align-items: center;
-	justify-content: center;
-	padding: 13px var(--padding-3xs);
-	z-index: 1;
-}
-.cursor-wrapper {
-	width: 473px;
-	align-items: flex-start;
-	justify-content: flex-end;
-	max-width: 100%;
-	text-align: center;
-	font-size: var(--font-size-base);
-	color: var(--color-white);
-	font-family: var(--font-inter);
-}
-.card,
-.frame-wellcome {
-	display: flex;
-	align-items: center;
-	max-width: 100%;
-	height: var(--section-midheight);
-}
-.card {
-	flex: 1;
-	flex-direction: column;
-	/* justify-content: flex-start; */
-	padding: 182px 557px 78px var(--padding-xl);
-	box-sizing: border-box;
-	position: relative;
-	gap: var(--gap-40xl);
-	background-image: url(./public/twopeopleholdinghandstogetherwithlovewarmthwoodentable-115026175-1@2x.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top;
-}
-.frame-wellcome {
-	align-self: stretch;
-	overflow: hidden;
-	flex-direction: row;
-	justify-content: center;
-	z-index: 3;
-	text-align: left;
-	font-size: 60px;
-	color: var(--color-mediumaquamarine-100);
-	font-family: var(--font-roboto);
-}
+
 .card-parent {
 	height: 2px;
 	width: 41px;
