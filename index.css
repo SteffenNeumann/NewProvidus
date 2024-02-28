@@ -213,10 +213,10 @@ a {
 	text-align: center;
 	color: rgb(18, 19, 18);
 }
-
+/* 
 .mobile-links a:hover {
-	/*color: #7869E6*/
-}
+	color: #7869E6
+} */
 .mobile-links .closebtn {
 	font-size: var(--font-2x-large);
 	color: rgb(18, 19, 18, 0.7);
@@ -542,7 +542,7 @@ background: #c1c1c1;
 	color: var(--color-white);
 	text-align: center;
 }
-.button-service {
+/* .button-service {
 	cursor: pointer;
 	border: 1px solid var(--color-white);
 	padding: 7px 19px;
@@ -555,8 +555,7 @@ background: #c1c1c1;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-}
-/* TEST */
+} */
 button {
 	display: inline-block;
 	position: relative;
@@ -569,7 +568,7 @@ button {
 	margin: 20px 30px;
 	background: rgba(250, 248, 248, 0.09);
 }
-span {
+#Willkommen span {
 	display: block;
 	/* position: relative; */
 	font-size: var(--font-size-sm);
@@ -618,7 +617,6 @@ button:hover span::after {
 .btn-1 span::before,
 .btn-1 span::after {
 	transition-delay: 0s;
-
 }
 .btn-1::before {
 	right: 0;
@@ -639,12 +637,10 @@ button:hover span::after {
 .btn-1:hover::before,
 .btn-1:hover::after {
 	transition-delay: 0s;
-	
 }
 .btn-1:hover span::before,
 .btn-1:hover span::after {
 	transition-delay: 0.2s;
-	
 }
 /* END */
 /* .button-service::before,
@@ -796,7 +792,6 @@ button:hover span::after {
 	align-items: center;
 	max-width: 100%;
 	height: var(--section-midheight);
-	
 }
 .card {
 	flex: 1;
@@ -821,7 +816,6 @@ button:hover span::after {
 	font-size: 60px;
 	color: var(--color-mediumaquamarine-100);
 	font-family: var(--font-roboto);
-	
 }
 .card-parent {
 	height: 2px;
