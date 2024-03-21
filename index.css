@@ -570,14 +570,14 @@ background: #c1c1c1;
 button {
 	display: inline-block;
 	position: relative;
-	background: none;
+	font-size: var(--font-size-sm);
 	border: none;
+	border-radius: var(--br-4xs);
 	/* border: solid 1px #eee; */
 	color: #fff;
-	font-size: 18px;
 	cursor: pointer;
 	margin: 20px 30px;
-	background: rgba(250, 248, 248, 0.09);
+	background: rgba(0, 0, 0, 0.19);
 }
 span {
 	display: block;
@@ -589,13 +589,14 @@ span {
 	/* text-align: center; */
 	padding: 15px 36px;
 }
-button::before,
-button::after {
+.btn-cls button::before,
+.btn-cls button::after {
 	content: "";
 	width: 0;
 	height: 2px;
 	position: absolute;
 	transition: all 0.2s linear;
+	border-radius: var(--br-5xs);
 	background: var(--color-mediumaquamarine-100);
 }
 
@@ -653,7 +654,7 @@ button:hover span::after {
 .btn-1:hover span::after {
 	transition-delay: 0.2s;
 }
-/* SECTION : END Wellcome */
+/* !SECTION : END Wellcome */
 /* .button-service::before,
 .button-service::after {
 	content: "";
@@ -2857,280 +2858,4 @@ button:hover span::after {
 	background-color: var(--color-white);
 	padding: 23px 0 0;
 	letter-spacing: normal;
-}
-@media screen and (max-width: 1200px) {
-	.card {
-		padding-right: 278px;
-		box-sizing: border-box;
-	}
-	.fr-about1,
-	.mild-independence {
-		padding-bottom: var(--padding-74xl);
-		box-sizing: border-box;
-	}
-	.fr-about1 {
-		padding-top: 73px;
-		padding-bottom: var(--padding-52xl);
-	}
-}
-@media screen and (max-width: 1050px) {
-	.willkommen-bei-providus {
-		font-size: 51px;
-	}
-	.einfach-gut-helfen {
-		font-size: 26px;
-	}
-	.unser-bester-service {
-		font-size: var(--font-size-10xl);
-	}
-	.frame-pflege {
-		min-height: auto;
-	}
-	.ergoteam-info {
-		flex-wrap: wrap;
-	}
-	.main-frame {
-		padding-top: 76px;
-		padding-bottom: var(--padding-52xl);
-		box-sizing: border-box;
-	}
-	.unser-netzwerk {
-		font-size: var(--font-size-10xl);
-	}
-	.significant-impact {
-		padding-top: 74px;
-		padding-bottom: 67px;
-		box-sizing: border-box;
-	}
-	.pflegegrade-information {
-		font-size: var(--font-size-10xl);
-	}
-	.fr-about-parent {
-		padding-bottom: var(--padding-74xl);
-		box-sizing: border-box;
-	}
-	.ber-uns,
-	.jobs1 {
-		font-size: var(--font-size-10xl);
-	}
-	.jobs {
-		padding-top: var(--padding-52xl);
-		padding-bottom: var(--padding-52xl);
-		box-sizing: border-box;
-	}
-	.container-jobs {
-		/* padding-bottom: 72px; */
-		box-sizing: border-box;
-	}
-	.kontakt2 {
-		font-size: var(--font-size-10xl);
-	}
-	.contact-card-details {
-		flex: 1;
-	}
-	.info-box-providus {
-		flex-wrap: wrap;
-	}
-	.fr-impressum {
-		padding-left: var(--padding-8xl);
-		padding-right: var(--padding-8xl);
-		box-sizing: border-box;
-	}
-}
-@media screen and (max-width: 750px) {
-	.text-area {
-		flex-wrap: wrap;
-	}
-	.p-flegegrad {
-		gap: var(--gap-27xl);
-	}
-	.card {
-		gap: var(--gap-40xl);
-		padding-top: 118px;
-		padding-right: 139px;
-		padding-bottom: 51px;
-		box-sizing: border-box;
-	}
-	.main-frame {
-		gap: var(--gap-21xl);
-		padding-top: 49px;
-		padding-bottom: var(--padding-27xl);
-		box-sizing: border-box;
-	}
-	.frame-parent {
-		padding-right: 41px;
-		box-sizing: border-box;
-	}
-	.contact-info-request-consult {
-		min-width: 100%;
-	}
-	.pflegegradbis-punkte1 {
-		padding-right: 65px;
-		box-sizing: border-box;
-	}
-	.seitder-einfhrung {
-		min-width: 100%;
-	}
-	.significant-impact {
-		gap: var(--gap-18xl);
-		padding-top: 48px;
-		padding-bottom: 44px;
-		box-sizing: border-box;
-	}
-	.mild-independence {
-		padding-bottom: var(--padding-41xl);
-		box-sizing: border-box;
-	}
-	.fr-about-parent {
-		gap: var(--gap-23xl);
-	}
-	.fr-about1 {
-		gap: var(--gap-74xl);
-		padding-top: var(--padding-28xl);
-		padding-bottom: var(--padding-27xl);
-		box-sizing: border-box;
-	}
-	.aufgaben,
-	.frame-anforderung,
-	.framee-biete {
-		padding-top: var(--padding-xl);
-		padding-bottom: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.jobs {
-		gap: var(--gap-13xl);
-	}
-	.container-jobs {
-		padding-bottom: var(--padding-28xl);
-		box-sizing: border-box;
-	}
-	.contact-card-details,
-	.name-email-input-frame {
-		min-width: 100%;
-	}
-	.frame-impressum {
-		gap: var(--gap-15xl);
-		padding-bottom: var(--padding-52xl);
-		box-sizing: border-box;
-	}
-}
-@media screen and (max-width: 450px) {
-	.willkommen-bei-providus {
-		font-size: 38px;
-	}
-	.einfach-gut-helfen {
-		font-size: var(--font-size-lgi);
-	}
-	.card {
-		padding-right: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.unser-bester-service {
-		font-size: var(--font-size-3xl);
-	}
-	.ambulate {
-		font-size: var(--font-size-lgi);
-	}
-	.frame-pflege {
-		gap: var(--gap-13xl);
-	}
-	.hauswirtschaftsdienste {
-		font-size: var(--font-size-lgi);
-	}
-	.frame-hauswirtschaft {
-		gap: var(--gap-13xl);
-	}
-	.beratung {
-		font-size: var(--font-size-lgi);
-	}
-	.unser-netzwerk {
-		font-size: var(--font-size-3xl);
-	}
-	.haus-und-fachrzte {
-		font-size: var(--font-size-lgi);
-		line-height: 18px;
-	}
-	.content-text {
-		flex-wrap: wrap;
-	}
-	.header-frame1 {
-		padding-top: var(--padding-7xl);
-		padding-bottom: var(--padding-7xl);
-		box-sizing: border-box;
-	}
-	.ergo-und-physiotherapeuten,
-	.fusspflege,
-	.hausnotruf {
-		font-size: var(--font-size-lgi);
-		line-height: 18px;
-	}
-	.pflegegradbis-punkte1 {
-		padding-left: var(--padding-xl);
-		padding-right: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.pflegegrade-information {
-		font-size: var(--font-size-3xl);
-	}
-	.pflegegrad-1 {
-		font-size: var(--font-size-lgi);
-	}
-	.image-1-parent {
-		padding-top: var(--padding-xl);
-		padding-bottom: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.pflegegrad-2 {
-		font-size: var(--font-size-lgi);
-	}
-	.image-2-parent {
-		padding-top: var(--padding-xl);
-		padding-bottom: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.pflegegrad-3 {
-		font-size: var(--font-size-lgi);
-	}
-	.pexels-tima-miroshnichenko-601-parent {
-		padding-top: var(--padding-xl);
-		padding-bottom: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.pflegegrad-4 {
-		font-size: var(--font-size-lgi);
-	}
-	.old-woman-nursing-home-walking-parent {
-		padding-top: var(--padding-xl);
-		padding-bottom: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.pflegegrad-5 {
-		font-size: var(--font-size-lgi);
-	}
-	.close-up-medic-pointing-tablet-parent {
-		padding-top: var(--padding-xl);
-		padding-bottom: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.fr-about-parent {
-		padding-bottom: var(--padding-41xl);
-		box-sizing: border-box;
-	}
-	.ber-uns {
-		font-size: var(--font-size-3xl);
-	}
-	.fr-about1 {
-		gap: var(--gap-74xl);
-	}
-	.jobs1 {
-		font-size: var(--font-size-3xl);
-	}
-	.jobs {
-		padding-top: var(--padding-27xl);
-		padding-bottom: var(--padding-27xl);
-		box-sizing: border-box;
-	}
-	.kontakt2 {
-		font-size: var(--font-size-3xl);
-	}
 }
