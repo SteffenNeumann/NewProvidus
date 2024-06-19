@@ -19,6 +19,7 @@
 		<link
 			rel="stylesheet"
 			href="https://www.w3schools.com/lib/w3-colors-highway.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -32,6 +33,28 @@
 			<button onclick="goToTop()" id="back-to-top" title="Go to top">
 				<i class="fa fa-toggle-up"></i>
 			</button>
+				<!-- FIXME : Mobile NAV anpassen -->
+					<div id="mobile-sidenav" class="mobile-links">
+						<a
+							href="javascript:void(0)"
+							class="closebtn w3-round"
+							onclick="toggleMobileNavigation()"
+							>&times;</a
+						>
+						<a href="#Willkommen" onclick="toggleMobileNavigation()"
+							>Willkommen</a
+						>
+						<a href="#frameBesterService" onclick="toggleMobileNavigation()"
+							>Service</a
+						>
+						<a href="#network" onclick="toggleMobileNavigation()">Netzwerk</a>
+						<a href="#pflege" onclick="toggleMobileNavigation()">Pflegegrad</a>
+						<a href="#about" onclick="toggleMobileNavigation()">Über Uns</a>
+						<a href="#jobs" onclick="toggleMobileNavigation()"
+							>Stellenangebote</a
+						>
+						<a href="#contact" onclick="toggleMobileNavigation()">Kontakt</a>
+					</div>
 			<!-- SECTION : Navigation -->
 			<section class="navigation w3-metro-light-blue">
 				<!--w3-container -->
@@ -57,26 +80,12 @@
 						<a href="#jobs">Stellenangebote</a>
 						<a href="#contact">Kontakt</a>
 					</div>
-					<!-- FIXME : Mobile NAV anpassen -->
-					<div id="mobile-sidenav" class="mobile-links">
-						<a
-							href="javascript:void(0)"
-							class="closebtn w3-round"
-							onclick="toggleMobileNavigation()"
-							>&times;</a
-						>
-						<a href="#about" onclick="toggleMobileNavigation()">Über mich</a>
-						<a href="#consulting" onclick="toggleMobileNavigation()"
-							>Beratung</a
-						>
-						<a href="#contact" onclick="toggleMobileNavigation()">Kontakt</a>
-						<a href="#footer" onclick="toggleMobileNavigation()">Impressum</a>
-					</div>
+				
 				</nav>
 			</section>
 			<!-- !SECTION  -->
 			<!-- SECTION : Willkommen -->
-			<!-- <section id="Willkommen" class="section">
+			<section id="Willkommen" class="section">
 				<div class="frame-wellcome">
 					<div class="card">
 					
@@ -105,7 +114,7 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 			<!-- !SECTION  -->
 			<!-- SECTION : Service -->
 			<!-- <section id="frameBesterService" class="section">
