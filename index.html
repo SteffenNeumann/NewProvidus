@@ -15,11 +15,11 @@
 		<!--MOD: Stylsheet-->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
 		<link
 			rel="stylesheet"
 			href="https://www.w3schools.com/lib/w3-colors-highway.css" />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -33,30 +33,28 @@
 			<button onclick="goToTop()" id="back-to-top" title="Go to top">
 				<i class="fa fa-toggle-up"></i>
 			</button>
-				<!-- FIXME : Mobile NAV anpassen -->
-					<div id="mobile-sidenav" class="mobile-links">
-						<a
-							href="javascript:void(0)"
-							class="closebtn w3-round"
-							onclick="toggleMobileNavigation()"
-							>&times;</a
-						>
-						<a href="#Willkommen" onclick="toggleMobileNavigation()"
-							>Willkommen</a
-						>
-						<a href="#frameBesterService" onclick="toggleMobileNavigation()"
-							>Service</a
-						>
-						<a href="#network" onclick="toggleMobileNavigation()">Netzwerk</a>
-						<a href="#pflege" onclick="toggleMobileNavigation()">Pflegegrad</a>
-						<a href="#about" onclick="toggleMobileNavigation()">Über Uns</a>
-						<a href="#jobs" onclick="toggleMobileNavigation()"
-							>Stellenangebote</a
-						>
-						<a href="#contact" onclick="toggleMobileNavigation()">Kontakt</a>
-					</div>
+			<!-- FIXME : Mobile NAV anpassen -->
+			<div id="mobile-sidenav" class="mobile-links">
+				<a
+					href="javascript:void(0)"
+					class="closebtn w3-round"
+					onclick="toggleMobileNavigation()"
+					>&times;</a
+				>
+				<div class="mobil-nav-body">
+				<a href="#Willkommen" onclick="toggleMobileNavigation()">Willkommen</a>
+				<a href="#frameBesterService" onclick="toggleMobileNavigation()"
+					>Service</a
+				>
+				<a href="#network" onclick="toggleMobileNavigation()">Netzwerk</a>
+				<a href="#pflege" onclick="toggleMobileNavigation()">Pflegegrad</a>
+				<a href="#about" onclick="toggleMobileNavigation()">Über Uns</a>
+				<a href="#jobs" onclick="toggleMobileNavigation()">Stellenangebote</a>
+				<a href="#contact" onclick="toggleMobileNavigation()">Kontakt</a>
+				</div>
+			</div>
 			<!-- SECTION : Navigation -->
-			<section class="navigation w3-metro-light-blue">
+			<section class="navigation ">
 				<!--w3-container -->
 				<nav class="nav-container">
 					<div class="logo">
@@ -80,7 +78,6 @@
 						<a href="#jobs">Stellenangebote</a>
 						<a href="#contact">Kontakt</a>
 					</div>
-				
 				</nav>
 			</section>
 			<!-- !SECTION  -->
@@ -88,11 +85,10 @@
 			<section id="Willkommen" class="section">
 				<div class="frame-wellcome">
 					<div class="card">
-					
-						<div class="p-flegegrad">
-							<div class="willkommen-bei-providus-parent">
+						<div class="card-content">
+							<div class="H1-frame">
 								<h1 class="willkommen-bei-providus">Willkommen bei Providus</h1>
-								<h1 class="einfach-gut-helfen">einfach gut helfen</h1>
+								<h2 class="einfach-gut-helfen">einfach gut helfen</h2>
 							</div>
 							<div class="btn-cls">
 								<button onclick="scrollToFrameBesterService()" class="btn-1">
@@ -109,7 +105,7 @@
 									Ein Lächeln, eine Hand - Unsere Pflege steht für
 									Menschlichkeit und Fürsorge.
 								</p>
-								<p>Ihr Alexandru Stoica </p>
+								<p>Ihr Alexandru Stoica</p>
 							</div>
 						</div>
 					</div>
@@ -117,7 +113,7 @@
 			</section>
 			<!-- !SECTION  -->
 			<!-- SECTION : Service -->
-			<!-- <section id="frameBesterService" class="section">
+			<section id="frameBesterService" class="section">
 				<div class="main-frame">
 					<div class="parent-node-line-parent">
 						<div class="parent-node-line">
@@ -135,9 +131,9 @@
 							</p>
 						</div>
 					</div>
-					<div class="ergoteam-info">
-						<div class="frame-pflege">
-							<div class="malteser-help">
+					<div class="main-service">
+						<div class="service-cards">
+							<div class="service-cards-head">
 								<div class="health-medical-svgrepo-com-1">
 									<img
 										class="svgrepo-iconcarrier"
@@ -147,11 +143,26 @@
 								</div>
 								<h3 class="ambulate">Ambulante Pflege</h3>
 							</div>
-							<div class="wir-leisten-professionelle-container">
+							<div class="servicecard-content">
 								<p class="wir-bieten-ihnen">
 									Wir bieten Ihnen neben der Grundpflege, Behandlungspflege wie:
+									
 								</p>
-								<ul class="verbandswechsel-wundversorgung">
+								<p class="servicecard-content">
+									Grundpflege nach SGB XI
+									Behandlungspflege nach SGB V
+									Verbandswechsel
+									Wundversorgung
+									Injektionen
+									Medikamentengabe
+									Blutzuckermessung und Insulininjektionen
+									Spezialisierte Ernährungsdienste
+									Enterale und parenterale Ernährung
+									Port- und PEG-Versorgung
+									Hol- und Bringdienst
+									Rund um die Uhr erreichbar
+									Beratungseinsätze nach § 37 SGB XI</p>
+								<!-- <ul class="verbandswechsel-wundversorgung">
 									<li class="verbandswechsel">Verbandswechsel</li>
 									<li class="wundversorgung">Wundversorgung</li>
 									<li class="injektionen">Injektionen</li>
@@ -169,15 +180,15 @@
 									<li class="intensiv-behandlungspflege">
 										Intensiv-Behandlungspflege
 									</li>
-								</ul>
+								</ul> -->
 								<p class="auerdem-bieten-wir">
 									Außerdem bieten wir 24-Stunden Erreichbarkeit. Unsere
 									Beratungseinsätze berechnen sich nach § 37 SGB XI.
 								</p>
 							</div>
 						</div>
-						<div class="frame-hauswirtschaft">
-							<div class="handschlag-1-parent">
+						<div class="service-cards">
+							<div class="service-cards-head">
 								<img
 									class="handschlag-1-icon"
 									loading="eager"
@@ -186,26 +197,18 @@
 
 								<h3 class="hauswirtschaftsdienste">Hauswirtschaftsdienste</h3>
 							</div>
-							<div class="hauswirtschaftliche-dienstleit">
-								<p class="immer-mehr-menschen">
-									Immer mehr Menschen benötigen Unterstützung
-								</p>
-								<p class="im-haushalt">im Haushalt.</p>
-								<p class="hauswirtschaftliche-dienstleis">
-									Hauswirtschaftliche Dienstleistungsunternehmen bieten
-									verschiedene Services an, wie Reinigung, Wäschepflege, Einkauf
-									und Verpflegung. Sie kümmern sich auch um Hausgarten- und
-									Blumenpflege, Grabpflege und bieten Veranstaltungsservice und
-									Catering an. Zusätzlich bieten sie Alltagsbegleitung für
-									Senioren, Familienhilfe und Leistungen für Pflegebedürftige
-									an. Bei Krankheitsfällen in der Familie können sie die
-									Betreuung und Versorgung übernehmen. Die Kosten werden von der
-									Pflegekasse übernommen, ohne dass das Pflegegeld gekürzt wird.
+							<div class="servicecard-content">
+									Immer mehr Menschen benötigen Unterstützung im Haushalt. Unser
+									Service umfasst folgende Punkte: Reinigung, Wäschepflege,
+									Bügeln, Einkauf, Verpflegung Alltagsbegleitung für Senioren
+									Übernahme von Betreuung und Versorgung bei Krankheit in der
+									Familie ⁠Kostenübernahme durch Pflegekasse ohne Kürzung des
+									Pflegegeldes
 								</p>
 							</div>
 						</div>
-						<div class="frame-beratung">
-							<div class="sprechblase-1-parent">
+						<div class="service-cards">
+							<div class="service-cards-head">
 								<img
 									class="sprechblase-1-icon"
 									loading="eager"
@@ -214,12 +217,15 @@
 
 								<h3 class="beratung">Beratung</h3>
 							</div>
-							<div class="untersttzung-bei-antrgen">
-								Unterstützung bei Anträgen an die Kranken- und Pflegekasse,
-								Erstellung von Pflegegutachten, Pflegetagebüchern,
-								Finanzierungsmöglichkeiten, Formulare und Informationsmaterial,
-								Beratung und Unterstützung bei pflegefachlichen Themen,
-								Anleitungen und Pflegeeinsätze nach §37 SGB XI.
+							<div class="servicecard-content">
+								Wir verstehen, dass das ganze Thema rund um Pflege überfordernd
+								und kompliziert sein kann. Aus diesem Grund bieten wir folgende
+								Beratungsdienstleistungen an: ⁠Unterstützung bei Anträgen an die
+								Kranken- und Pflegekasse Erstellung von Pflegegutachten,
+								Pflegetagebüchern, Finanzierungsmöglichkeiten, Formulare und
+								Informationsmaterial Beratung und Unterstützung bei
+								pflegefachlichen Themen Anleitungen und Pflegeeinsätze nach §37
+								SGB XI.
 							</div>
 						</div>
 					</div>
@@ -227,7 +233,7 @@
 						class="anchor-main-frame"
 						data-scroll-to="frameBesterService"></div>
 				</div>
-			</section> -->
+			</section>
 			<!-- !SECTION  -->
 			<!-- SECTION : Network -->
 			<!-- <section id="network" class="section">

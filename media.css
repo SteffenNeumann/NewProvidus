@@ -6,8 +6,9 @@
 		font-size: var(--font-size-lgi);
 	}
 	.card {
-		padding-right: var(--padding-xl);
+		/* padding-right: var(--padding-xl); */
 		box-sizing: border-box;
+		
 	}
 	.unser-bester-service {
 		font-size: var(--font-size-3xl);
@@ -130,15 +131,27 @@
 	}
 
 	.navigation {
+	
 		position: sticky;
 		top: 0;
 		z-index: 999;
 		background: rgba(252, 252, 252, 1) !important;
 	}
-
-	.mobile-links .closebtn {
+	.nav-container .logo {
+    
+    margin-left: 50px;
+   
+}
+.p-logo1-1-icon {
+	height: 46px;
+	width: 110px;
+	object-fit: cover;
+	width: 26vw; /* 15% der Viewport-Breite */
+  height: auto;
+}
+	/* .mobile-links .closebtn {
 		margin-right: 0;
-	}
+	} */
 
 	/*letter-spacing: 1px;*/
 }
@@ -147,13 +160,13 @@
 	.text-area {
 		flex-wrap: wrap;
 	}
-	.p-flegegrad {
+	.card-content {
 		gap: var(--gap-27xl);
 	}
 	.card {
 		gap: var(--gap-40xl);
 		padding-top: 118px;
-		padding-right: 139px;
+		/* padding-right: 139px; */
 		padding-bottom: 51px;
 		box-sizing: border-box;
 	}
@@ -259,6 +272,8 @@
 
   .mobile-links-active {
     width: 100%;
+		z-index: 999999;
+		position: sticky;
 		
   }
 
@@ -333,7 +348,7 @@
 
 
 	.card {
-		padding-right: 278px;
+		/* padding-right: 278px; */
 		box-sizing: border-box;
 	}
 	.fr-about1,
@@ -357,5 +372,8 @@
 @media screen and (max-width: 1200px) {
 	.container {
 		width: 80%;
+	}
+	.servicecard-content{
+		width:100%
 	}
 }
