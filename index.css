@@ -73,7 +73,7 @@ html {
 
 .nav-container .logo {
 	display: flex;
-	margin-left: 100px;
+	margin-left: 7lvw;
 	align-items: center;
 	cursor: pointer;
 	/* width: 5vw; 
@@ -81,12 +81,8 @@ html {
 }
 
 .p-logo1-1-icon {
-	height: 56px;
-	width: 143.2px;
-	bottom: -41px;
-	top: 8px;
-	left: 106px;
-	object-fit: cover;
+	height: auto;
+	width: 90px;
 	/* width: 88.178px;
 height: 32px;
 flex-shrink: 0; */
@@ -664,6 +660,9 @@ button:hover span::after {
 	max-width: 100%;
 	min-width: 350px;
 }
+.servicecard-content p {
+	margin: 0;
+}
 .frame-pflege {
 	flex: 1;
 	border-radius: var(--br-3xs);
@@ -793,6 +792,45 @@ button:hover span::after {
 	font-family: var(--font-roboto);
 	flex-wrap: wrap;
 }
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(50px); /* Startwert für die vertikale Verschiebung */
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.main-service {
+	opacity: 0;
+	animation: fadeInUp 1s ease-out forwards;
+	animation-delay: 0.2s; /* Verzögerung für das übergeordnete Element */
+}
+
+.main-service > .service-cards:nth-child(1) {
+	opacity: 0;
+	transform: translateY(50px); /* Startwert für die vertikale Verschiebung */
+	animation: fadeInUp 1s ease-out forwards;
+	animation-delay: 0.5s; /* Verzögerung für das erste Element */
+}
+
+.main-service > .service-cards:nth-child(2) {
+	opacity: 0;
+	transform: translateY(50px); /* Startwert für die vertikale Verschiebung */
+	animation: fadeInUp 1s ease-out forwards;
+	animation-delay: 0.8s; /* Verzögerung für das zweite Element */
+}
+
+.main-service > .service-cards:nth-child(3) {
+	opacity: 0;
+	transform: translateY(50px); /* Startwert für die vertikale Verschiebung */
+	animation: fadeInUp 1s ease-out forwards;
+	animation-delay: 1.1s; /* Verzögerung für das dritte Element */
+}
+
 .service-cards {
 	display: flex;
 	justify-content: flex-start;
@@ -812,6 +850,7 @@ button:hover span::after {
 	/* padding: 0 var(--padding-6xl); */
 	gap: var(--gap-base);
 }
+
 .anchor-main-frame {
 	position: absolute;
 	left: 0;
@@ -2617,12 +2656,7 @@ button:hover span::after {
 	color: var(--color-darkslategray-200);
 	font-family: var(--font-inter);
 }
-.p-logo1-1-icon1 {
-	width: 143.2px;
-	height: 56px;
-	position: relative;
-	object-fit: cover;
-}
+
 .infopflegedienst-providusde1 {
 	text-decoration: underline;
 }
