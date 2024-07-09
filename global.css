@@ -14,6 +14,7 @@ body {
 
 :root {
 	/* fonts */
+	--font-family: "Avenir Next", sans-serif;
 	--font-inter: Inter;
 	--font-roboto: Roboto;
 
@@ -27,8 +28,21 @@ body {
 	--font-size-5xl: 24px;
 	--font-size-lgi: 19px;
 	--font-size-lg: 18px;
+	--font-medium: 1em;
+	--font-medium-large: 1.25em;
+	--font-large: 1.5rem;
+	--font-x-large: 2rem;
+	--font-2x-large: 3rem;
+	--font-3x-large: 3.5rem;
+
+	/* Miscellaneous */
+	--transition-fast: 0.5s;
+	--nav-height: 80px;
+	--section-height: 1000px;
+	--section-midheight: 800px;
 
 	/* Colors */
+	--title-span-color: #7869e6;
 	--color-white: #fff;
 	--color-gray-100: rgba(0, 0, 0, 0.25);
 	--color-gray-200: rgba(255, 255, 255, 0.1);
