@@ -9,7 +9,7 @@
 		/* padding-right: var(--padding-xl); */
 		box-sizing: border-box;
 	}
-	.unser-bester-service {
+	.cards-h1 {
 		font-size: var(--font-size-3xl);
 	}
 	.ambulate {
@@ -30,7 +30,7 @@
 	.unser-netzwerk {
 		font-size: var(--font-size-3xl);
 	}
-	.haus-und-fachrzte {
+	.cards-content-h1 {
 		font-size: var(--font-size-lgi);
 		line-height: 18px;
 	}
@@ -280,7 +280,7 @@
 	.einfach-gut-helfen {
 		font-size: 26px;
 	}
-	.unser-bester-service {
+	.cards-h1 {
 		font-size: var(--font-size-10xl);
 	}
 	.frame-pflege {
