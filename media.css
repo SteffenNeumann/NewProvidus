@@ -5,7 +5,7 @@
 	.einfach-gut-helfen {
 		font-size: var(--font-size-lgi);
 	}
-	.card {
+	.wellcome-card {
 		/* padding-right: var(--padding-xl); */
 		box-sizing: border-box;
 	}
@@ -159,7 +159,7 @@
 	.card-content {
 		gap: var(--gap-27xl);
 	}
-	.card {
+	.wellcome-card{
 		gap: var(--gap-40xl);
 		padding-top: 118px;
 		/* padding-right: 139px; */
@@ -322,6 +322,9 @@
 		/* padding-bottom: 72px; */
 		box-sizing: border-box;
 	}
+	.cards-column{
+		width: 100%;
+	}
 	.kontakt2 {
 		font-size: var(--font-size-10xl);
 	}
@@ -339,7 +342,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-	.card {
+	.wellcome-card {
 		/* padding-right: 278px; */
 		box-sizing: border-box;
 	}

@@ -278,7 +278,7 @@ a {
 	color: var(--color-white);
 }
 
-.card {
+.wellcome-card {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
@@ -602,7 +602,6 @@ button:hover span::after {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top;
-	/* padding: 250px 0; */
 	position: relative;
 }
 
@@ -623,12 +622,7 @@ button:hover span::after {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* padding: 100px; */
 	box-sizing: border-box;
-	/* background-image: url('public/handshake.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top; */
 	text-align: center;
 	font-size: 36px;
 	color: var(--color-white);
@@ -670,15 +664,6 @@ button:hover span::after {
 	gap: 32px;
 }
 .cards {
-	/* align-self: stretch;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: space-between;
-	text-align: left;
-	font-size: var(--font-size-base);
-	font-family: var(--font-roboto); */
-
 	align-self: stretch;
 	display: flex;
 	flex-direction: row;
@@ -689,15 +674,30 @@ button:hover span::after {
 	font-family: var(--font-roboto);
 	flex-wrap: wrap;
 	align-content: center;
+	gap: var(--gap-5xs);
 }
 
-/* .unser-netzwerk {
-	position: relative;
-} */
+.cards-column {
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: var(--gap-5xl);
+}
+
+.left-upper {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: var(--br-5xs);
+	backdrop-filter: blur(42px) !important;
+	-webkit-backdrop-filter: blur(42px) !important;
+	opacity: 0;
+	animation: fadeInUp 1s ease-out forwards;
+	animation-delay: 0.2s;
+}
 
 .section-description {
-	width: 640px;
-	/* position: relative; */
+	max-width: 640px;
 	font-size: var(--font-size-base);
 	line-height: 24px;
 	font-weight: 300;
@@ -722,10 +722,7 @@ button:hover span::after {
 	position: relative;
 	height: auto;
 }
-/* .haus-und-fachrzte {
-	position: relative;
-	line-height: 23px;
-} */
+
 .header1 {
 	align-self: stretch;
 	display: flex;
@@ -736,34 +733,31 @@ button:hover span::after {
 	font-size: var(--font-size-5xl);
 	/* color: var(--color-mediumaquamarine); */
 }
-.dr-kaiser-kollegen {
-	margin-block-start: 0;
-	margin-block-end: 7px;
-	font-size: var(--font-size-lg);
+
+.content-contact {
+	min-width: 370px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--gap-5xl);
 }
-.dr-med-gerhard-container {
+
+.content-contact-cards {
 	align-self: stretch;
 	position: relative;
 	line-height: 19px;
 	mix-blend-mode: normal;
+	text-align: left;
 }
-.dr-konrad-bajuwarenstr-container {
-	align-self: stretch;
-	position: relative;
-	line-height: 19px;
-}
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: var(--gap-5xl);
+.content-contact-cards p:first-child {
+	font-weight: 500;
+	margin-block-start: 0;
+	margin-block-end: 7px;
+	font-size: var(--font-size-lg);
 }
 .left-upper {
 	align-self: stretch;
-	backdrop-filter: blur(42px);
-	border-radius: var(--br-5xs);
-	/* background-color: var(--color-gray); */
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -771,220 +765,7 @@ button:hover span::after {
 	padding: var(--padding-21xl) var(--padding-21xl);
 	gap: var(--gap-5xl);
 }
-/* .vector-icon1 {
-	width: 26px;
-	position: relative;
-	height: 21.5px;
-} */
-.header2 {
-	width: 220px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	padding: 0px 10px 0px 0px;
-	box-sizing: border-box;
-	gap: var(--gap-base);
-}
-.melanie-jost {
-	margin-block-start: 0;
-	margin-block-end: 8px;
-}
-.telefon-49-177 {
-	margin: 0;
-	font-size: var(--font-size-base);
-}
-.rk-hausnotruf-telefon-container {
-	width: 487px;
-	position: relative;
-	color: var(--color-white);
-	display: inline-block;
-	font-size: var(--font-size-lg);
-}
-/* .left-lower {
-	width: 400px;
-	backdrop-filter: blur(42px);
-	border-radius: var(--br-5xs);
-	background-color: var(--color-gray);
-	display: none;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	padding: var(--padding-5xl) var(--padding-21xl);
-	box-sizing: border-box;
-	gap: var(--gap-5xl);
-	font-size: var(--font-size-5xl);
-	color: var(--color-mediumaquamarine);
-} */
-.left-cards {
-	width: 400px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	gap: var(--gap-5xl);
-}
-.ergo-und-physiotherapeuten {
-	align-self: stretch;
-	position: relative;
-	line-height: 23px;
-}
-.header3 {
-	align-self: stretch;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: var(--gap-5xl);
-}
-.content1 {
-	align-self: stretch;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: var(--gap-5xl);
-	font-size: var(--font-size-base);
-	color: var(--color-white);
-}
-/* .vector-icon3 {
-	width: 25px;
-	position: relative;
-	height: 25px;
-} */
-.malteser-hausnotruf {
-	margin-block-start: 0;
-	margin-block-end: 7px;
-}
-.rk-hausnotruf-telefon-container1 {
-	align-self: stretch;
-	position: relative;
-	line-height: 25px;
-}
-.content2 {
-	align-self: stretch;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: var(--gap-base);
-	text-align: left;
-	font-size: var(--font-size-base);
-	color: var(--color-white);
-}
-.middle-lower {
-	align-self: stretch;
-	backdrop-filter: blur(42px);
-	border-radius: var(--br-5xs);
-	background-color: var(--color-gray);
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	padding: var(--padding-21xl) var(--padding-21xl);
-	gap: var(--gap-5xl);
-	text-align: center;
-}
-.middle-cards {
-	width: 400px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: var(--padding-12xs) 0px;
-	box-sizing: border-box;
-	gap: var(--gap-5xl);
-	font-size: var(--font-size-5xl);
-	color: var(--color-darkseagreen);
-}
-/* .svgrepo-iconcarrier {
-	width: 30px;
-	position: relative;
-	height: 24px;
-} */
-.header5 {
-	align-self: stretch;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: var(--gap-base);
-	font-size: var(--font-size-5xl);
-	color: var(--color-darkseagreen);
-}
-/* .phone-solid-1-icon {
-	width: 25px;
-	position: relative;
-	height: 25px;
-	overflow: hidden;
-	flex-shrink: 0;
-} */
-.header6 {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: var(--gap-base);
-}
-.rk-hausnotruf-telefon-container3 {
-	width: 100%;
-}
-.rk-hausnotruf-telefon-container2 {
-	width: 334px;
-	position: relative;
-	line-height: 25px;
-	display: flex;
-	align-items: center;
-	height: 22px;
-	flex-shrink: 0;
-}
-.malteser-hausnotruf-telefon-container1 {
-	width: 361px;
-	position: relative;
-	line-height: 19px;
-	display: flex;
-	align-items: center;
-	height: 49px;
-	flex-shrink: 0;
-}
-/* .content4 {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	padding: 21px 0px;
-	gap: var(--gap-base);
-	text-align: left;
-	font-size: var(--font-size-base);
-	color: var(--color-white);
-} */
-/* .right-lower {
-	width: 400px;
-	backdrop-filter: blur(42px);
-	border-radius: var(--br-5xs);
-	background-color: var(--color-gray);
-	height: 275px;
-	display: none;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	padding: var(--padding-5xl) var(--padding-21xl);
-	box-sizing: border-box;
-	gap: var(--gap-5xl);
-	text-align: center;
-	font-size: var(--font-size-5xl);
-	color: var(--color-darkseagreen);
-} */
-.right-cards {
-	width: 400px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: var(--padding-12xs) 0px;
-	box-sizing: border-box;
-	gap: var(--gap-5xl);
-}
+
 
 /*!SECTION: End Contact */
 
@@ -1260,7 +1041,7 @@ button:hover span::after {
 	margin: 0;
 	position: relative;
 	font-size: inherit;
-	line-height: 23px;
+	/* line-height: 23px; */
 	font-weight: 400;
 	font-family: inherit;
 	color: var(--color-mediumaquamarine-100);
