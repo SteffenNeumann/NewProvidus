@@ -159,7 +159,7 @@
 	.card-content {
 		gap: var(--gap-27xl);
 	}
-	.wellcome-card{
+	.wellcome-card {
 		gap: var(--gap-40xl);
 		padding-top: 118px;
 		/* padding-right: 139px; */
@@ -322,7 +322,7 @@
 		/* padding-bottom: 72px; */
 		box-sizing: border-box;
 	}
-	.cards-column{
+	.cards-column {
 		width: 100%;
 	}
 	.kontakt2 {
@@ -364,11 +364,8 @@
 	}
 }
 
-@media screen and (max-width: 1200px) {
-	.container {
-		width: 80%;
-	}
-	.servicecard-content {
-		width: 100%;
+@media (min-width: 1500px) {
+	.cards-column {
+		width: 28vw;
 	}
 }
