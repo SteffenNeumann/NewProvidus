@@ -24,10 +24,10 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+		<link rel="stylesheet" href="./animate.min.css" />
 		<link rel="stylesheet" href="./global.css" />
 		<link rel="stylesheet" href="./index.css" />
 		<link rel="stylesheet" href="./media.css" />
-		<link rel="stylesheet" href="./animate.min.css" />
 	</head>
 	<body>
 		<main id="main" class="main-content" role="main">
@@ -347,8 +347,6 @@
 				</div>
 			</section>
 			<!-- !SECTION : End New Network -->
-
-			<!-- !SECTION  -->
 			<!-- SECTION : Pflege -->
 			<section id="pflege" class="section">
 				<div class="main-frame">
@@ -387,22 +385,38 @@
 										src="./public/image-1@2x.png" />
 
 									<div class="blackcover-21"></div>
-									<div class="pflegegrad-1-parent">
-										<h3 class="pflegegrad-1">Pflegegrad 1</h3>
-										<div class="bis-27-punkte">12,5 bis 27 Punkte</div>
+									<div class="card-pflege-header">
+										<h3>Pflegegrad 1</h3>
+										<div>12,5 bis 27 Punkte</div>
 									</div>
-									<div class="severely-self-standsdisabled">
-										<div class="geringe-beeintrchtigung-der">
-											Geringe Beeinträchtigung der Selbstständigkeit
-										</div>
-										<button class="more-learn">
-											<img
-												class="more-learn-child"
-												alt=""
-												src="./public/rectangle-14.svg" />
-
-											<div class="mehr-erfahren">mehr erfahren</div>
+									<div class="card-pflege-body">
+										<div>Geringe Beeinträchtigung der Selbstständigkeit</div>
+										<button onclick="setupPopup(popup1,back1)">
+											<img alt="" src="./public/rectangle-14.svg" />
+											<div>mehr erfahren</div>
 										</button>
+									</div>
+								</div>
+								<div id="back1" class="back">
+									<div id="popup1" class="popup card-pflege-info">
+										<div class="card-pflege-more-header">
+											<h1>Pflegegrad 1</h1>
+											<div>12,5 bis 27 Punkte</div>
+										</div>
+										<div>
+											Der Pflegegrad 1 ist die niedrigste Stufe der
+											Pflegebedürftigkeit. Der Pflegegrad 1 wurde am 1.1.2017
+											neu eingeführt und wird Menschen zuteil, die bislang keine
+											Pflegestufe erhalten hatten. Diese Pflegestufe ist somit
+											völlig neu. Pflegebedürftige mit Pflegegrad 1 sind
+											lediglich gering in Ihrer Selbstständigkeit
+											beeinträchtigt. Menschen mit Pflegegrad 1 erhalten kein
+											Pflegegeld für die Pflege zu Hause, also weder
+											Pflegesachleistungen noch ambulante Geldleistungen.
+											Allerdings haben Sie einen Anspruch auf einen
+											zweckgebundenen ambulanten Entlastungsbetrag in Höhe von
+											125 € monatlich seitens der Pflegeversicherung.
+										</div>
 									</div>
 								</div>
 							</div>
@@ -411,120 +425,190 @@
 							<div class="card1-inner">
 								<div class="image-2-parent">
 									<img
-										class="image-2-icon"
+										class="image-1-icon"
 										alt=""
 										src="./public/image-2@2x.png" />
 
-									<div class="blackcover-22"></div>
-									<div class="pflegegrad-2-parent">
-										<h3 class="pflegegrad-2">Pflegegrad 2</h3>
-										<div class="bis-475-punkte">27 bis 47,5 Punkte</div>
+									<div class="blackcover-21"></div>
+									<div class="card-pflege-header">
+										<h3>Pflegegrad 2</h3>
+										<div>27 bis 47,5 Punkte</div>
 									</div>
-									<div class="erhebliche-beeintrchtigung-de-parent">
-										<div class="erhebliche-beeintrchtigung-de">
-											Erhebliche Beeinträchtigung der Selbstständigkeit
-										</div>
-										<button class="vector-parent">
-											<img
-												class="frame-child"
-												alt=""
-												src="./public/rectangle-14.svg" />
-
-											<div class="mehr-erfahren1">mehr erfahren</div>
+									<div class="card-pflege-body">
+										<div>Erhebliche Beeinträchtigung der Selbstständigkeit</div>
+										<button onclick="setupPopup(popup2,back2)">
+											<img alt="" src="./public/rectangle-14.svg" />
+											<div>mehr erfahren</div>
 										</button>
+									</div>
+								</div>
+								<div id="back2" class="back">
+									<div id="popup2" class="popup card-pflege-info">
+										<div class="card-pflege-more-header">
+											<h1>Pflegegrad 2</h1>
+											<div>27 bis 47,5 Punkte</div>
+										</div>
+										<div>
+											In den Pflegegrad 2 werden alle Menschen eingestuft,
+											welche bisher in die Pflegestufen 0 und 1(ohne
+											eingeschränkte Alltagskompetenz) eingeteilt waren. In den
+											Pflegegrad 2 wird man eingeteilt, wenn man vom
+											Medizinischen Dienst der Krankenversicherung. zwischen 27
+											und < 47,5 Punkten anerkannt bekommen hat. Werden
+											Pflegebedürftige mit Pflegegrad 2 von Privatpersonen
+											gepflegt, erhalten sie eine monatliche ambulante
+											Geldleistung von 316 €. Werden sie ambulant von einem
+											Pflegedienst gepflegt, erhalten sie ambulante
+											Sachleistungen bzw. Pflegesachleistungen in Höhe von 724
+											€. Bei Heimpflege erhalten sie stationäre Leistungsbeträge
+											in Höhe von 770
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card1">
 							<div class="card1-inner1">
-								<div class="pexels-tima-miroshnichenko-601-parent">
+								<div class="image-3-parent">
 									<img
-										class="pexels-tima-miroshnichenko-601-icon"
+										class="image-1-icon"
 										alt=""
 										src="./public/pexelstimamiroshnichenko6010790-1-1@2x.png" />
 
-									<img
-										class="person-holding-elderly-woman-h-icon"
-										alt=""
-										src="./public/personholdingelderlywomanhand-1@2x.png" />
-
-									<div class="blackcover-23"></div>
-									<div class="pflegegrad-3-parent">
-										<h3 class="pflegegrad-3">Pflegegrad 3</h3>
-										<div class="bis-70-punkte">47,5 bis 70 Punkte</div>
+									<div class="blackcover-21"></div>
+									<div class="card-pflege-header">
+										<h3>Pflegegrad 3</h3>
+										<div>47,5 bis 70 Punkte</div>
 									</div>
-									<div class="schwere-beeintrchtigung-der-s-parent">
-										<div class="schwere-beeintrchtigung-der">
-											Schwere Beeinträchtigung der Selbstständigkeit
-										</div>
-										<button class="vector-group">
-											<img
-												class="frame-item"
-												alt=""
-												src="./public/rectangle-14.svg" />
-
-											<div class="mehr-erfahren2">mehr erfahren</div>
+									<div class="card-pflege-body">
+										<div>Schwere Beeinträchtigung der Selbstständigkeit</div>
+										<button onclick="setupPopup(popup3,back3)">
+											<img alt="" src="./public/rectangle-14.svg" />
+											<div>mehr erfahren</div>
 										</button>
+									</div>
+								</div>
+								<div id="back3" class="back">
+									<div id="popup3" class="popup card-pflege-info">
+										<div class="card-pflege-more-header">
+											<h1>Pflegegrad 3</h1>
+											<div>47,5 bis 70 Punkte</div>
+										</div>
+										<div>
+											Dem Pflegegrad 3 entsprechen die Pflegestufen 1 (mit
+											eingeschränkter Alltagskompetenz, also meist Demenz) und 2
+											(ohne eingeschränkte Alltagskompetenz). Den Pflegegrad 3
+											erhält man, wenn man 47,5 bis < 70 Punkte vom
+											Medizinischen Dienst der Krankenversicherung zugeteilt
+											bekommt. Eine Pflegebedürftige Person mitPflegegrad 3
+											erhält durch die Pflegeversicherung entweder 545 €
+											Pflegegeld ambulant, wenn sie von Angehörigen gepflegt
+											wird oder 1.298 € Pflegesachleistungen ambulant, wenn ein
+											ambulanter Pflegedienst die Pflege übernimmt. Erfolgt die
+											Pflege in einem Heim, so werden 1.262 € monatlich von der
+											Pflegeversicherung bezahlt.
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card1">
 							<div class="card1-inner1">
-								<div class="old-woman-nursing-home-walking-parent">
+								<div class="image-4-parent">
 									<img
-										class="old-woman-nursing-home-walking-icon"
+										class="image-1-icon"
 										alt=""
 										src="./public/oldwomannursinghomewalkingwithcrutcheswithhelpfromfemalenurse-1@2x.png" />
 
-									<div class="blackcover-24"></div>
-									<div class="pflegegrad-4-parent">
-										<h3 class="pflegegrad-4">Pflegegrad 4</h3>
-										<div class="bis-90-punkte">70,0 bis 90 Punkte</div>
+									<div class="blackcover-21"></div>
+									<div class="card-pflege-header">
+										<h3>Pflegegrad 4</h3>
+										<div>70,0 bis 90 Punkte</div>
 									</div>
-									<div class="schwerste-beeintrchtigung-der-parent">
-										<div class="schwerste-beeintrchtigung-der">
-											Schwerste Beeinträchtigung der Selbstständigkeit
-										</div>
-										<button class="vector-container">
+									<div class="card-pflege-body">
+										<div>Schwerste Beeinträchtigung der Selbstständigkeit</div>
+										<button onclick="setupPopup(popup4,back4)">
 											<img
-												class="frame-inner"
+												class="image-1-icon"
 												alt=""
 												src="./public/rectangle-14.svg" />
 
-											<div class="mehr-erfahren3">mehr erfahren</div>
+											<div>mehr erfahren</div>
 										</button>
+									</div>
+								</div>
+								<div id="back4" class="back">
+									<div id="popup4" class="popup card-pflege-info">
+										<div class="card-pflege-more-header">
+											<h1>Pflegegrad 4</h1>
+											<div>70,0 bis 90 Punkte</div>
+										</div>
+										<div>
+											Menschen, die Leistungen der Pflegestufe 2 und 3 in
+											Anspruch genommen hatten, werden nun dem Pflegegrad 4
+											zugeteilt. Den Pflegegrad 4 erhält eine pflegebedürftige
+											Person, wenn der Medizinische Dienst der
+											Krankenversicherung 70 bis < 90 Punkte vergibt. Ein
+											Pflegebedürftiger mit Pflegegrad 4 erhält ambulantes
+											Pflegegeld in Höhe von 728 €, wenn er zu Hause von
+											Angehörigen gepflegt wird. Ambulante Sachleistungen in
+											Höhe von 1.612 € erhält der Pflegebedürftige, wenn er in
+											häuslicher Umgebung von einem ambulanten Pflegedienst
+											gepflegt wird.Der stationäre Leistungsbetrag beträgt 1.775
+											€.
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card1">
 							<div class="card1-inner1">
-								<div class="close-up-medic-pointing-tablet-parent">
+								<div class="image-5-parent">
 									<img
-										class="close-up-medic-pointing-tablet-icon"
+										class="image-1-icon"
 										alt=""
 										src="./public/closeupmedicpointingtabletscreenmedicalpracticeworkinglatedoctorusingmoderndevicewithtouchscreentalkingassistantabouthealthcaresystemovertime-1@2x.png" />
-
-									<div class="blackcover-25"></div>
-									<div class="pflegegrad-5-parent">
-										<h3 class="pflegegrad-5">Pflegegrad 5</h3>
-										<div class="bis-100-punkte">90,0 bis 100 Punkte</div>
+									<div class="blackcover-21"></div>
+									<div class="card-pflege-header">
+										<h3>Pflegegrad 5</h3>
+										<div>90,0 bis 100 Punkte</div>
 									</div>
-									<div class="schwerste-selbststndigkeits-b-parent">
-										<div class="schwerste-selbststndigkeits-b">
+									<div class="card-pflege-body">
+										<div>
 											Schwerste Selbstständigkeits-beeinträchtigung mit
 											speziellen Pflegeanforderungen
 										</div>
-										<button class="frame-button">
+										<button onclick="setupPopup(popup5,back5)">
 											<img
-												class="rectangle-icon"
+												class="image-1-icon"
 												alt=""
 												src="./public/rectangle-14.svg" />
-
-											<div class="mehr-erfahren4">mehr erfahren</div>
+											<div>mehr erfahren</div>
 										</button>
+									</div>
+								</div>
+								<div id="back5" class="back">
+									<div id="popup5" class="popup card-pflege-info">
+										<div class="card-pflege-more-header">
+											<h1>Pflegegrad 5</h1>
+											<div>90,0 bis 100 Punkte</div>
+										</div>
+										<div>
+											Pflegegrad 5 ist die höchste Stufe der Pflegebedürftigkeit
+											und erfordert eine intensive 24-Stunden-Pflege. Menschen,
+											die zuvor in die Kategorie „Härtefall“ fielen oder der
+											Pflegestufe 3 mit eingeschränkter Alltagskompetenz
+											entsprachen, können diesen Grad erhalten. Es gibt keinen
+											Unterschied in der Art der Pflegeleistungen für Menschen
+											mit oder ohne eingeschränkte kognitive Fähigkeiten. Bei
+											Pflege durch Angehörige gibt es monatlich 901 €
+											Pflegegeld, während professionelle Pflegedienste monatlich
+											1.995 € kosten. Stationäre Pflege in einem Pflegeheim
+											kostet monatlich 2.005 €, jedoch muss ein Eigenanteil
+											gezahlt werden. Zusätzlich haben Pflegebedürftige mit
+											Pflegegrad 5 Anspruch auf zweckgebundene Betreuungs- und
+											Entlastungsleistungen.
+										</div>
 									</div>
 								</div>
 							</div>
@@ -836,6 +920,24 @@
 					if (anchor) {
 						anchor.scrollIntoView({ block: "start", behavior: "smooth" });
 					}
+				});
+			}
+		</script>
+
+		<script>
+			function setupPopup(popupId, backID) {
+				popupId.style.display = "flex";
+				backID.style.display = "block";
+				popupId.addEventListener("click", function (e) {
+					<!-- console.log(this.id,e.target.id); -->
+					if (e.target === this) {
+						this.style.display = "none";
+						backID.style.display = "none";
+					}
+				});
+				backID.addEventListener("click", function (e) {
+					this.style.display = "none";
+					popupId.style.display = "none";
 				});
 			}
 		</script>

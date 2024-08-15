@@ -12,6 +12,17 @@
 	.cards-h1 {
 		font-size: var(--font-size-3xl);
 	}
+	.back,
+	.card-pflege-info {
+		backdrop-filter: blur(0);
+	}
+	.back {
+		background: rgba(255, 255, 255, 0);
+	}
+	.card-pflege-info {
+		background: rgba(255, 255, 255, 0.97);
+		transform: translate(-50%, -50%);
+	}
 	.ambulate {
 		font-size: var(--font-size-lgi);
 	}
@@ -145,6 +156,7 @@
 		width: 26vw; /* 15% der Viewport-Breite */
 		height: auto;
 	}
+
 	/* .mobile-links .closebtn {
 		margin-right: 0;
 	} */
@@ -153,6 +165,9 @@
 }
 
 @media screen and (max-width: 750px) {
+	.cards {
+		justify-content: space-around;
+	}
 	.text-area {
 		flex-wrap: wrap;
 	}
