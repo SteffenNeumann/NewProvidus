@@ -1044,8 +1044,8 @@ button:hover span::after {
 /* !SECTION: Pflegegrad */
 
 /* SECTION: About */
-#about{
-	padding:0;
+#about {
+	padding: 0;
 }
 .about-background {
 	background-color: #f9f9f9;
@@ -1056,7 +1056,6 @@ button:hover span::after {
 	padding: 6svh var(--padding-xl) var(--padding-91xl);
 	gap: var(--gap-21xl);
 	z-index: 1;
-
 }
 .staff1 {
 	display: flex;
