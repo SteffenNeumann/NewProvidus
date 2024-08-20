@@ -309,7 +309,7 @@ a {
 	align-self: stretch;
 }
 .mysignature p:last-child {
-	font-family: Noteworthy;
+	font-family:  "Reenie Beanie", cursive;
 }
 .mysignature p {
 	align-self: stretch;
@@ -2116,7 +2116,7 @@ button:hover span::after {
 	flex-shrink: 0;
 	max-width: 100%;
 }
-/*TODO Stellen CSS*/
+
 .frame-anforderung {
 	flex: 1;
 	border-radius: var(--br-5xs);
