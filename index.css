@@ -989,10 +989,11 @@ button:hover span::after {
 	display: none;
 	width: 100vw;
 	height: 100vh;
-	backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(60px);
 	/* background: rgba(178, 178, 178, 0.2);
 	background: rgba(0, 0, 0, 0.5); */
-	background: rgba(145, 145, 145, 0.2);
+	background: rgba(145, 145, 145, 0.7);
+	/* background: rgba(218, 220, 214, 0.8); */
 }
 
 .card-pflege-info {
@@ -1012,12 +1013,13 @@ button:hover span::after {
 		var(--padding-14xl);
 
 	/* From https://css.glass */
-	background: rgba(255, 255, 255, 0.6);
-	border-radius: 16px;
+	background: rgba(239, 240, 241, 0.85);
+	background: rgba(255, 255, 255, 0.85);
+	border-radius: var(--br-5xs);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-	border: 1px solid rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.9);
 }
 .popup {
 	display: none;
@@ -1040,6 +1042,61 @@ button:hover span::after {
 }
 
 /* !SECTION: Pflegegrad */
+
+/* SECTION: About */
+#about{
+	padding:0;
+}
+.about-background {
+	background-color: #f9f9f9;
+	flex: 1;
+	overflow: hidden;
+	flex-direction: column;
+	align-items: center;
+	padding: 6svh var(--padding-xl) var(--padding-91xl);
+	gap: var(--gap-21xl);
+	z-index: 1;
+
+}
+.staff1 {
+	display: flex;
+	box-sizing: border-box;
+	max-width: 100%;
+	width: 430px;
+	border-radius: var(--br-5xs);
+	background-color: var(--color-gray-200);
+	box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.25);
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0 0 0 var(--padding-12xs);
+}
+/* .fr-about1,
+.your-profile {
+	justify-content: flex-start;
+}
+.fr-about1 {
+	flex: 1;
+	background-color: #f9f9f9;
+	overflow: hidden;
+	flex-direction: column;
+	align-items: center;
+	padding: 112px var(--padding-xl) var(--padding-91xl);
+	gap: var(--gap-74xl);
+	z-index: 1;
+}
+.your-profile {
+	align-self: stretch;
+	flex-direction: row;
+	align-items: flex-start;
+	
+	text-align: center;
+	font-size: var(--font-size-17xl);
+	color: var(--color-black);
+	font-family: var(--font-inter);
+} */
+
+/* !SECTION: About */
 
 .header-frame1,
 .p-flegegrad-info {
@@ -1982,47 +2039,7 @@ button:hover span::after {
 	object-fit: cover;
 	z-index: 1;
 }
-.fr-about1,
-.staff1,
-.your-profile {
-	display: flex;
-	box-sizing: border-box;
-	max-width: 100%;
-}
-.staff1 {
-	width: 430px;
-	border-radius: var(--br-3xs);
-	background-color: var(--color-gray-200);
-	box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.25);
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding: 0 0 0 var(--padding-12xs);
-}
-.fr-about1,
-.your-profile {
-	justify-content: flex-start;
-}
-.fr-about1 {
-	flex: 1;
-	background-color: #f9f9f9;
-	overflow: hidden;
-	flex-direction: column;
-	align-items: center;
-	padding: 112px var(--padding-xl) var(--padding-91xl);
-	gap: var(--gap-74xl);
-	z-index: 1;
-}
-.your-profile {
-	align-self: stretch;
-	flex-direction: row;
-	align-items: flex-start;
-	/* padding: 0 0 0 var(--padding-12xs); */
-	text-align: center;
-	font-size: var(--font-size-17xl);
-	color: var(--color-black);
-	font-family: var(--font-inter);
-}
+
 .text-block-ausbildung {
 	height: 2px;
 	width: 41px;
