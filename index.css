@@ -33,7 +33,9 @@ element.style {
 	border-radius: 50%;
 }
 .main-content {
-	width: 100%;
+	/* width: 1440px; */
+	/* max-width: 1400px;*/
+	margin: 0 auto; 
 }
 /* SECTION Navigation*/
 
@@ -309,7 +311,7 @@ a {
 	align-self: stretch;
 }
 .mysignature p:last-child {
-	font-family:  "Reenie Beanie", cursive;
+	font-family: "Reenie Beanie", cursive;
 }
 .mysignature p {
 	align-self: stretch;
@@ -426,15 +428,11 @@ button:hover span::after {
 	display: flex;
 	align-self: stretch;
 	width: 100%;
-	/* height: var(--section-height); */
-	/* padding: 10lvw; */
 	gap: var(--gap-21xl);
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: center;
-	/* cursor: pointer; */
-	/* z-index: 2; */
 	text-align: center;
 	font-size: var(--font-size-17xl);
 	color: var(--color-black);
@@ -713,9 +711,15 @@ button:hover span::after {
 	font-family: var(--font-roboto);
 	display: inline-block;
 }
+.description-center p {
+	text-align: center;
+}
 .section-description p {
 	margin: 0;
 	text-align: justify;
+}
+.description-center p {
+	text-align: center;
 }
 .vector-icon-small {
 	width: 25px;
@@ -988,7 +992,7 @@ button:hover span::after {
 	z-index: 100;
 	display: none;
 	width: 100vw;
-	height: 100vh;
+	height: 100dvh;
 	backdrop-filter: saturate(180%) blur(60px);
 	/* background: rgba(178, 178, 178, 0.2);
 	background: rgba(0, 0, 0, 0.5); */
@@ -1017,8 +1021,8 @@ button:hover span::after {
 	background: rgba(255, 255, 255, 0.85);
 	border-radius: var(--br-5xs);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
+	/* backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px); */
 	border: 1px solid rgba(255, 255, 255, 0.9);
 }
 .popup {
@@ -1070,33 +1074,178 @@ button:hover span::after {
 	justify-content: center;
 	padding: 0 0 0 var(--padding-12xs);
 }
-/* .fr-about1,
-.your-profile {
-	justify-content: flex-start;
+
+/* !SECTION: About */
+/* SECTION: Jobs */
+
+#jobs {
+	/* padding: 0; */
+	background-color: var(--color-darkseagreen);
 }
-.fr-about1 {
+#jobs .frame-header {
+	color: var(--color-white);
+}
+#jobs .line-3-2 {
+	border-color: var(--color-white);
+}
+#jobs .section-description p {
+	text-align: center;
+}
+.jobs-background {
+	/* background-color: var(--color-darkseagreen); */
 	flex: 1;
-	background-color: #f9f9f9;
 	overflow: hidden;
 	flex-direction: column;
 	align-items: center;
-	padding: 112px var(--padding-xl) var(--padding-91xl);
-	gap: var(--gap-74xl);
+	/* padding: 6svh var(--padding-xl) var(--padding-91xl); */
+	gap: var(--gap-21xl);
 	z-index: 1;
 }
-.your-profile {
-	align-self: stretch;
+.frame-cards-jobs {
+	/* width: 1240px; */
 	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: flex-start;
-	
+	/* padding: 0 var(--padding-10xs) 0 0; */
+	gap: var(--gap-4xl);
+	text-align: left;
+	font-size: var(--font-size-xl);
+	font-family: var(--font-roboto);
+	color: var(--color-white);
+}
+
+.frame-cards-jobs {
+	display: flex;
+	align-self: stretch;
+	justify-content: space-between;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+/* .container-jobs {
+	align-self: stretch;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--gap-13xl);
+	padding: 6svh var(--padding-xl) var(--padding-91xl);
 	text-align: center;
 	font-size: var(--font-size-17xl);
-	color: var(--color-black);
+	color: var(--color-white);
+
 	font-family: var(--font-inter);
 } */
 
-/* !SECTION: About */
+/* .jobs {
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
 
+	gap: var(--gap-13xl);
+} */
+.single-card-jobs {
+	width: 350px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: flex-start;
+	gap: var(--gap-5xl);
+	max-width: 100%;
+	border-radius: var(--br-5xs);
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	padding: 16px 32px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.9);
+}
+.ihr-profil-sie-container {
+	height: 500px;
+	width: 324px;
+	position: relative;
+	line-height: 170%;
+	display: inline-block;
+	flex-shrink: 0;
+	max-width: 100%;
+}
+
+.frame-anforderung {
+	flex: 1;
+	border-radius: var(--br-5xs);
+	background-color: var(--color-darkseagreen);
+	border: 1px solid var(--color-white);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: var(--padding-6xl);
+	min-width: 298px;
+	max-width: 100%;
+}
+.header-stellen {
+	font-family: inherit;
+	font-size: inherit;
+	margin-bottom: 16px;
+	font-weight: 400;
+}
+.stellen-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 20px;
+}
+.stellen-list li {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: 100;
+	font-size: var(--font-size-base);
+	line-height: 20.8px;
+	font-family: var(--font-roboto);
+}
+
+
+#jobs button {
+	cursor: pointer;
+	border: 1px solid var(--color-white);
+	padding: var(--padding-2xs) var(--padding-xs) var(--padding-xs)
+		var(--padding-mid);
+	background-color: var(--color-darkseagreen);
+	width: 130px;
+	height: 40px;
+	border-radius: var(--br-9xs);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	gap: var(--gap-mini);
+	white-space: nowrap;
+	z-index: 2;
+}
+#jobs button img {
+	height: 40px;
+	width: 130px;
+	position: relative;
+	border-radius: var(--br-9xs);
+	display: none;
+	z-index: 0;
+}
+#jobs .popup{
+	width:500px;
+	min-width: 400px;
+	/* height:50vh; */
+}
+#popupjobs p{
+	margin:0px;
+}
+#popupjobs hr {
+	border: 1px solid var(--color-gray-100);
+	margin-bottom: 34px;
+}
+
+/* !SECTION: Jobs */
 .header-frame1,
 .p-flegegrad-info {
 	display: flex;
@@ -2077,15 +2226,7 @@ button:hover span::after {
 	line-height: 21px;
 	font-family: var(--font-roboto);
 }
-.frame-aufgaben {
-	width: 650px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	gap: var(--gap-5xl);
-	max-width: 100%;
-}
+
 .ihr-profil {
 	margin: 0;
 	text-transform: uppercase;
@@ -2106,51 +2247,6 @@ button:hover span::after {
 .sie-haben-eine-deutsche-arbeit,
 .sie-sind-ein-emphatischer-mens {
 	margin: 0;
-}
-.ihr-profil-sie-container {
-	height: 500px;
-	width: 324px;
-	position: relative;
-	line-height: 170%;
-	display: inline-block;
-	flex-shrink: 0;
-	max-width: 100%;
-}
-
-.frame-anforderung {
-	flex: 1;
-	border-radius: var(--br-5xs);
-	background-color: var(--color-darkseagreen);
-	border: 1px solid var(--color-white);
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding: var(--padding-6xl);
-	min-width: 298px;
-	max-width: 100%;
-}
-.header-stellen {
-	font-family: inherit;
-	font-size: inherit;
-	margin-bottom: 16px;
-	font-weight: 400;
-}
-.stellen-list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: grid;
-	gap: 20px;
-}
-.stellen-list li {
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: 100;
-	font-size: var(--font-size-base);
-	line-height: 20.8px;
-	font-family: var(--font-roboto);
 }
 
 .das-stellen-von-medikamenten-n,
@@ -2228,43 +2324,7 @@ button:hover span::after {
 	min-width: 298px;
 	max-width: 100%;
 }
-.button-verebinbaren-sie-einen {
-	width: 1240px;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	padding: 0 var(--padding-10xs) 0 0;
-	gap: var(--gap-4xl);
-	text-align: left;
-	font-size: var(--font-size-xl);
-	font-family: var(--font-roboto);
-}
-.button-verebinbaren-sie-einen,
-.container-jobs,
-.jobs {
-	display: flex;
-	justify-content: flex-start;
-	box-sizing: border-box;
-	max-width: 100%;
-}
-.jobs {
-	flex: 1;
-	background-color: var(--color-darkseagreen);
-	flex-direction: column;
-	align-items: center;
-	padding: var(--padding-90xl) var(--padding-xl);
-	gap: var(--gap-13xl);
-}
-.container-jobs {
-	align-self: stretch;
-	flex-direction: row;
-	align-items: flex-start;
-	/* padding: 0 var(--padding-12xs) 111px; */
-	text-align: center;
-	font-size: var(--font-size-17xl);
-	color: var(--color-white);
-	font-family: var(--font-inter);
-}
+
 .frame-email {
 	height: 2px;
 	width: 40.9px;
