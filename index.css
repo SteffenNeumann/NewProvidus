@@ -35,7 +35,7 @@ element.style {
 .main-content {
 	/* width: 1440px; */
 	/* max-width: 1400px;*/
-	margin: 0 ;
+	margin: 0;
 	overflow: hidden;
 }
 /* SECTION Navigation*/
@@ -1253,24 +1253,12 @@ button:hover span::after {
 	gap: var(--gap-5xl);
 }
 
-.vakanz-header{
+.vakanz-header {
 	font-size: var(--font-size-sm);
 }
 
-
 .card-vacancy-body {
-	border-top:1px solid #000;
-	align-self: stretch;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: var(--gap-5xs);
-}
-.card-vacancy-foote h3{
-	padding:0;
-}
-.card-vacancy-footer{
+	border-top: 1px solid #000;
 	align-self: stretch;
 	display: flex;
 	flex-direction: column;
@@ -1279,8 +1267,17 @@ button:hover span::after {
 	gap: var(--gap-5xs);
 }
 
-
-
+.card-vacancy-footer {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-5xs);
+}
+.card-vacancy-footer p:first-child {
+	font-size: var(--font-size-xl);
+}
 
 /* !SECTION: Jobs */
 .header-frame1,

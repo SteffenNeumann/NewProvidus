@@ -178,6 +178,9 @@
 	.card-content {
 		gap: var(--gap-27xl);
 	}
+	.frame-wellcome{
+		padding:0;
+	}
 	.wellcome-card {
 		gap: var(--gap-40xl);
 		padding-top: 118px;
