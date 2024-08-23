@@ -35,7 +35,7 @@ element.style {
 .main-content {
 	/* width: 1440px; */
 	/* max-width: 1400px;*/
-	margin: 0 auto; 
+	margin: 0 auto;
 }
 /* SECTION Navigation*/
 
@@ -1155,7 +1155,7 @@ button:hover span::after {
 	border-radius: var(--br-5xs);
 	border: 1px solid rgba(255, 255, 255, 0.9);
 	padding: 16px 32px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
 	border: 1px solid rgba(255, 255, 255, 0.9);
 }
 .ihr-profil-sie-container {
@@ -1204,17 +1204,19 @@ button:hover span::after {
 	font-family: var(--font-roboto);
 }
 
-
 #jobs button {
 	cursor: pointer;
 	border: 1px solid var(--color-white);
+	border-radius: var(--br-9xs);
 	padding: var(--padding-2xs) var(--padding-xs) var(--padding-xs)
 		var(--padding-mid);
+	/* background-color: rgb(0,0,0,0.1); */
 	background-color: var(--color-darkseagreen);
-	width: 130px;
-	height: 40px;
-	border-radius: var(--br-9xs);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
+	color: var(--color-white);
+	width: 135px;
+	height: 40px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -1224,26 +1226,58 @@ button:hover span::after {
 	white-space: nowrap;
 	z-index: 2;
 }
-#jobs button img {
-	height: 40px;
-	width: 130px;
-	position: relative;
-	border-radius: var(--br-9xs);
-	display: none;
-	z-index: 0;
+#jobs button span {
+	color: var(--color-black);
 }
-#jobs .popup{
-	width:500px;
+#jobs .popup {
+	width: 500px;
 	min-width: 400px;
 	/* height:50vh; */
 }
-#popupjobs p{
-	margin:0px;
+#popupjobs p {
+	margin: 0px;
 }
-#popupjobs hr {
-	border: 1px solid var(--color-gray-100);
-	margin-bottom: 34px;
+#popupjobs h1 {
+	font-size: var(--font-size-17xl);
+	margin: 0px;
 }
+.card-vacancy-header {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-5xl);
+}
+
+.vakanz-header{
+	font-size: var(--font-size-sm);
+}
+
+
+.card-vacancy-body {
+	border-top:1px solid #000;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-5xs);
+}
+.card-vacancy-foote h3{
+	padding:0;
+}
+.card-vacancy-footer{
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-5xs);
+}
+
+
+
 
 /* !SECTION: Jobs */
 .header-frame1,
