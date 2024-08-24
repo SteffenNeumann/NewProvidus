@@ -1,3 +1,281 @@
+@media (min-width: 1500px) {
+	.cards-column {
+		width: 28vw;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.wellcome-card {
+		/* padding-right: 278px; */
+		box-sizing: border-box;
+	}
+	.fr-about1,
+	.mild-independence {
+		padding-bottom: var(--padding-74xl);
+		box-sizing: border-box;
+	}
+	.fr-about1 {
+		padding-top: 73px;
+		padding-bottom: var(--padding-52xl);
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.willkommen-bei-providus {
+		font-size: 51px;
+	}
+	.einfach-gut-helfen {
+		font-size: 26px;
+	}
+	.cards-h1 {
+		font-size: var(--font-size-10xl);
+	}
+	.frame-pflege {
+		min-height: auto;
+	}
+	.ergoteam-info {
+		flex-wrap: wrap;
+	}
+	.main-frame {
+		/* padding-top: 76px; */
+		padding-bottom: var(--padding-52xl);
+		box-sizing: border-box;
+	}
+	.unser-netzwerk {
+		font-size: var(--font-size-10xl);
+	}
+	.significant-impact {
+		padding-top: 74px;
+		padding-bottom: 67px;
+		box-sizing: border-box;
+	}
+	.pflegegrade-information {
+		font-size: var(--font-size-10xl);
+	}
+	.fr-about-parent {
+		padding-bottom: var(--padding-74xl);
+		box-sizing: border-box;
+	}
+	.ber-uns,
+	.jobs1 {
+		font-size: var(--font-size-10xl);
+	}
+	.jobs {
+		padding-top: var(--padding-52xl);
+		padding-bottom: var(--padding-52xl);
+		box-sizing: border-box;
+	}
+	.container-jobs {
+		/* padding-bottom: 72px; */
+		box-sizing: border-box;
+	}
+	.cards-column {
+		width: 100%;
+	}
+	.kontakt2 {
+		font-size: var(--font-size-10xl);
+	}
+	.contact-card-details {
+		flex: 1;
+	}
+	.info-box-providus {
+		flex-wrap: wrap;
+	}
+	.fr-impressum {
+		padding-left: var(--padding-8xl);
+		padding-right: var(--padding-8xl);
+		box-sizing: border-box;
+	}
+	.single-card-jobs {
+		width: 100%;
+		height: 400px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.nav-container {
+			width: 100%;
+		}
+
+		.container {
+			width: 90%;
+		}
+
+		.nav-container .links {
+			display: none;
+		}
+
+		.mobile-button {
+			display: flex;
+			width: 100%;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+		.mobile-button span {
+			font-size: var(--font-x-large);
+			color: var(--darkslategray-200);
+		}
+
+		.mobile-links-active {
+			width: 100%;
+			z-index: 999999;
+			position: fixed;
+		}
+	}
+
+	/* @media (max-width: 800px) {
+	.footer-content {
+		flex-direction: column;
+		justify-content: center;
+	}
+} */
+
+	@media (max-width: 800px) {
+		.footer-content {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.content.container,
+	.leadership-content.container {
+		width: 100%;
+	}
+
+	.container {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.cards {
+		justify-content: space-around;
+	}
+	.text-area {
+		flex-wrap: wrap;
+	}
+	.card-content {
+		gap: var(--gap-27xl);
+	}
+	.frame-wellcome {
+		padding: 0;
+	}
+	.wellcome-card {
+		gap: var(--gap-40xl);
+		padding-top: 118px;
+		/* padding-right: 139px; */
+		padding-bottom: 51px;
+		box-sizing: border-box;
+	}
+	.main-frame {
+		gap: var(--gap-21xl);
+		padding-top: 49px;
+		padding-bottom: var(--padding-27xl);
+		box-sizing: border-box;
+	}
+	.frame-parent {
+		padding-right: 41px;
+		box-sizing: border-box;
+	}
+	.contact-info-request-consult {
+		min-width: 100%;
+	}
+	.pflegegradbis-punkte1 {
+		padding-right: 65px;
+		box-sizing: border-box;
+	}
+	.seitder-einfhrung {
+		min-width: 100%;
+	}
+	.significant-impact {
+		gap: var(--gap-18xl);
+		padding-top: 48px;
+		padding-bottom: 44px;
+		box-sizing: border-box;
+	}
+	.mild-independence {
+		padding-bottom: var(--padding-41xl);
+		box-sizing: border-box;
+	}
+	.fr-about-parent {
+		gap: var(--gap-23xl);
+	}
+	.fr-about1 {
+		gap: var(--gap-74xl);
+		padding-top: var(--padding-28xl);
+		padding-bottom: var(--padding-27xl);
+		box-sizing: border-box;
+	}
+	.aufgaben,
+	.frame-anforderung,
+	.framee-biete {
+		padding-top: var(--padding-xl);
+		padding-bottom: var(--padding-xl);
+		box-sizing: border-box;
+	}
+	.jobs {
+		gap: var(--gap-13xl);
+	}
+	.container-jobs {
+		padding-bottom: var(--padding-28xl);
+		box-sizing: border-box;
+	}
+	#jobs .popup {
+		width: 80vw;
+		height: 80vh;
+		overflow-y: scroll;
+	}
+	.contact-card-details,
+	.name-email-input-frame {
+		min-width: 100%;
+	}
+	.frame-impressum {
+		gap: var(--gap-15xl);
+		padding-bottom: var(--padding-52xl);
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	html,
+	body {
+		overflow-x: none;
+	}
+	#Willkommen {
+		margin-top: 0;
+	}
+	#back-to-top {
+		display: none !important;
+	}
+
+	.navigation {
+		position: fixed;
+		top: 0;
+		z-index: 999;
+		background: rgba(252, 252, 252, 1) !important;
+	}
+	.nav-container .logo {
+		margin-left: 50px;
+	}
+	.p-logo1-1-icon {
+		height: 46px;
+		width: 110px;
+		object-fit: cover;
+		width: 26vw; /* 15% der Viewport-Breite */
+		height: auto;
+	}
+	.content-contact-cards p:first-child {
+		font-size: 1em;
+	}
+
+	/* .mobile-links .closebtn {
+		margin-right: 0;
+	} */
+
+	/*letter-spacing: 1px;*/
+}
+
 @media screen and (max-width: 450px) {
 	.willkommen-bei-providus {
 		font-size: 38px;
@@ -22,6 +300,7 @@
 	.card-pflege-info {
 		background: rgba(255, 255, 255, 0.97);
 		transform: translate(-50%, -50%);
+		width: 90vw;
 	}
 	.ambulate {
 		font-size: var(--font-size-lgi);
@@ -127,277 +406,5 @@
 	}
 	.kontakt2 {
 		font-size: var(--font-size-3xl);
-	}
-}
-
-@media screen and (max-width: 480px) {
-	html,
-	body {
-		overflow-x: none;
-	}
-	#Willkommen {
-		margin-top: 0;
-	}
-	#back-to-top {
-		display: none !important;
-	}
-
-	.navigation {
-		position: fixed;
-		top: 0;
-		z-index: 999;
-		background: rgba(252, 252, 252, 1) !important;
-	}
-	.nav-container .logo {
-		margin-left: 50px;
-	}
-	.p-logo1-1-icon {
-		height: 46px;
-		width: 110px;
-		object-fit: cover;
-		width: 26vw; /* 15% der Viewport-Breite */
-		height: auto;
-	}
-	.content-contact-cards p:first-child {
-		font-size: 1em;
-	}
-
-	/* .mobile-links .closebtn {
-		margin-right: 0;
-	} */
-
-	/*letter-spacing: 1px;*/
-}
-
-@media screen and (max-width: 750px) {
-	.cards {
-		justify-content: space-around;
-	}
-	.text-area {
-		flex-wrap: wrap;
-	}
-	.card-content {
-		gap: var(--gap-27xl);
-	}
-	.frame-wellcome {
-		padding: 0;
-	}
-	.wellcome-card {
-		gap: var(--gap-40xl);
-		padding-top: 118px;
-		/* padding-right: 139px; */
-		padding-bottom: 51px;
-		box-sizing: border-box;
-	}
-	.main-frame {
-		gap: var(--gap-21xl);
-		padding-top: 49px;
-		padding-bottom: var(--padding-27xl);
-		box-sizing: border-box;
-	}
-	.frame-parent {
-		padding-right: 41px;
-		box-sizing: border-box;
-	}
-	.contact-info-request-consult {
-		min-width: 100%;
-	}
-	.pflegegradbis-punkte1 {
-		padding-right: 65px;
-		box-sizing: border-box;
-	}
-	.seitder-einfhrung {
-		min-width: 100%;
-	}
-	.significant-impact {
-		gap: var(--gap-18xl);
-		padding-top: 48px;
-		padding-bottom: 44px;
-		box-sizing: border-box;
-	}
-	.mild-independence {
-		padding-bottom: var(--padding-41xl);
-		box-sizing: border-box;
-	}
-	.fr-about-parent {
-		gap: var(--gap-23xl);
-	}
-	.fr-about1 {
-		gap: var(--gap-74xl);
-		padding-top: var(--padding-28xl);
-		padding-bottom: var(--padding-27xl);
-		box-sizing: border-box;
-	}
-	.aufgaben,
-	.frame-anforderung,
-	.framee-biete {
-		padding-top: var(--padding-xl);
-		padding-bottom: var(--padding-xl);
-		box-sizing: border-box;
-	}
-	.jobs {
-		gap: var(--gap-13xl);
-	}
-	.container-jobs {
-		padding-bottom: var(--padding-28xl);
-		box-sizing: border-box;
-	}
-	#jobs .popup {
-		width: 80vw;
-		height: 80vh;
-		overflow-y: scroll;
-	}
-	.contact-card-details,
-	.name-email-input-frame {
-		min-width: 100%;
-	}
-	.frame-impressum {
-		gap: var(--gap-15xl);
-		padding-bottom: var(--padding-52xl);
-		box-sizing: border-box;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.content.container,
-	.leadership-content.container {
-		width: 100%;
-	}
-
-	.container {
-		width: 80%;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.nav-container {
-		width: 100%;
-	}
-
-	.container {
-		width: 90%;
-	}
-
-	.nav-container .links {
-		display: none;
-	}
-
-	.mobile-button {
-		display: flex;
-		width: 100%;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
-	.mobile-button span {
-		font-size: var(--font-x-large);
-		color: var(--darkslategray-200);
-	}
-
-	.mobile-links-active {
-		width: 100%;
-		z-index: 999999;
-		position: fixed;
-	}
-}
-
-@media screen and (max-width: 1050px) {
-	.willkommen-bei-providus {
-		font-size: 51px;
-	}
-	.einfach-gut-helfen {
-		font-size: 26px;
-	}
-	.cards-h1 {
-		font-size: var(--font-size-10xl);
-	}
-	.frame-pflege {
-		min-height: auto;
-	}
-	.ergoteam-info {
-		flex-wrap: wrap;
-	}
-	.main-frame {
-		/* padding-top: 76px; */
-		padding-bottom: var(--padding-52xl);
-		box-sizing: border-box;
-	}
-	.unser-netzwerk {
-		font-size: var(--font-size-10xl);
-	}
-	.significant-impact {
-		padding-top: 74px;
-		padding-bottom: 67px;
-		box-sizing: border-box;
-	}
-	.pflegegrade-information {
-		font-size: var(--font-size-10xl);
-	}
-	.fr-about-parent {
-		padding-bottom: var(--padding-74xl);
-		box-sizing: border-box;
-	}
-	.ber-uns,
-	.jobs1 {
-		font-size: var(--font-size-10xl);
-	}
-	.jobs {
-		padding-top: var(--padding-52xl);
-		padding-bottom: var(--padding-52xl);
-		box-sizing: border-box;
-	}
-	.container-jobs {
-		/* padding-bottom: 72px; */
-		box-sizing: border-box;
-	}
-	.cards-column {
-		width: 100%;
-	}
-	.kontakt2 {
-		font-size: var(--font-size-10xl);
-	}
-	.contact-card-details {
-		flex: 1;
-	}
-	.info-box-providus {
-		flex-wrap: wrap;
-	}
-	.fr-impressum {
-		padding-left: var(--padding-8xl);
-		padding-right: var(--padding-8xl);
-		box-sizing: border-box;
-	}
-	.single-card-jobs {
-		width: 100%;
-		height: 400px;
-	}
-}
-
-@media screen and (max-width: 1200px) {
-	.wellcome-card {
-		/* padding-right: 278px; */
-		box-sizing: border-box;
-	}
-	.fr-about1,
-	.mild-independence {
-		padding-bottom: var(--padding-74xl);
-		box-sizing: border-box;
-	}
-	.fr-about1 {
-		padding-top: 73px;
-		padding-bottom: var(--padding-52xl);
-	}
-}
-
-@media (max-width: 800px) {
-	.footer-content {
-		flex-direction: column;
-		justify-content: center;
-	}
-}
-
-@media (min-width: 1500px) {
-	.cards-column {
-		width: 28vw;
 	}
 }
