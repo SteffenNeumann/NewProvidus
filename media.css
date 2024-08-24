@@ -128,7 +128,6 @@
 	.kontakt2 {
 		font-size: var(--font-size-3xl);
 	}
-	
 }
 
 @media screen and (max-width: 480px) {
@@ -136,13 +135,15 @@
 	body {
 		overflow-x: none;
 	}
-
+	#Willkommen {
+		margin-top: 0;
+	}
 	#back-to-top {
 		display: none !important;
 	}
 
 	.navigation {
-		position: sticky;
+		position: fixed;
 		top: 0;
 		z-index: 999;
 		background: rgba(252, 252, 252, 1) !important;
@@ -160,7 +161,7 @@
 	.content-contact-cards p:first-child {
 		font-size: 1em;
 	}
-	
+
 	/* .mobile-links .closebtn {
 		margin-right: 0;
 	} */
@@ -178,8 +179,8 @@
 	.card-content {
 		gap: var(--gap-27xl);
 	}
-	.frame-wellcome{
-		padding:0;
+	.frame-wellcome {
+		padding: 0;
 	}
 	.wellcome-card {
 		gap: var(--gap-40xl);
@@ -243,7 +244,7 @@
 	}
 	#jobs .popup {
 		width: 80vw;
-		height:80vh;
+		height: 80vh;
 		overflow-y: scroll;
 	}
 	.contact-card-details,
@@ -366,9 +367,9 @@
 		padding-right: var(--padding-8xl);
 		box-sizing: border-box;
 	}
-	.single-card-jobs{
-		width:100%;
-		height:400px;
+	.single-card-jobs {
+		width: 100%;
+		height: 400px;
 	}
 }
 
