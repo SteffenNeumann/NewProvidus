@@ -224,8 +224,7 @@
 	#jobs .popup {
 		width: 80vw;
 		height: 90vh;
-		transform: translate(-50%, -45%);
-
+		/* transform: translate(-50%, -45%); */
 		overflow-y: scroll;
 	}
 	.contact-card-details,
