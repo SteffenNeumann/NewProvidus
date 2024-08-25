@@ -1192,7 +1192,6 @@ button:hover span::after {
 	border-radius: var(--br-9xs);
 	padding: var(--padding-2xs) var(--padding-xs) var(--padding-xs)
 		var(--padding-mid);
-	/* background-color: rgb(0,0,0,0.1); */
 	background-color: var(--color-darkseagreen);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
@@ -1279,13 +1278,13 @@ button:hover span::after {
 
 .info-box-providus {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-start;
 	box-sizing: border-box;
 	max-width: 100%;
 	align-self: stretch;
 	flex-direction: row;
-	padding: 0 var(--padding-12xs);
+	
 	gap: var(--gap-5xl);
 	text-align: left;
 	color: var(--color-silver-100);
@@ -1318,11 +1317,15 @@ button:hover span::after {
 	gap: 7px;
 }
 .contact-input {
+	display: flex;
 	align-self: stretch;
+	justify-content: center;
+	align-items: flex-start;
 	border-radius: var(--br-11xs);
 	border: 1px solid var(--color-mediumaquamarine-200);
 	flex-direction: row;
-	padding: var(--padding-3xs);
+	padding: 24px var(--padding-3xs);
+	
 }
 .input-field-nachricht {
 	display: flex;
@@ -1342,26 +1345,26 @@ button:hover span::after {
 	height: 21px;
 	position: relative;
 	line-height: 21px;
-	color: var(--color-silver-100);
+	color: var(--color-black);
 	text-align: left;
 	display: inline-block;
 }
 
 .contact-textarea {
-	border: 1px solid var(--color-mediumaquamarine-200);
-	/* background-color: transparent; */
-	height: 195px;
-	width: auto;
-	outline: 0;
-	align-self: stretch;
-	border-radius: var(--br-11xs);
-	box-sizing: border-box;
-	padding: 2px var(--padding-3xs);
-	font-family: var(--font-inter);
-	font-size: var(--font-size-base);
-	text-align: left;
-	color: var(--color-silver-100);
+  border: 1px solid var(--color-mediumaquamarine-200);
+  height: 195px;
+  width: 100%;
+  outline: 0;
+  align-self: stretch;
+  border-radius: var(--br-11xs);
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-base);
+  text-align: left;
+  /* color: var(--color-silver-100); */
+  padding: 10px;
 }
+
 
 .senden {
 	position: relative;
@@ -1386,11 +1389,9 @@ button:hover span::after {
 	border: 0;
 	padding: 9px var(--padding-2xl);
 	background-color: var(--color-darkseagreen);
-	width: 120px;
+	width: 135px;
 	height: 40px;
-
 	border-radius: var(--br-9xs);
-
 	font-size: var(--font-size-base);
 	line-height: 21px;
 	font-weight: 600;

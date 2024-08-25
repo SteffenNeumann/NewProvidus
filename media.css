@@ -170,8 +170,7 @@
 	}
 	.main-frame {
 		gap: var(--gap-21xl);
-		padding-top: 49px;
-		padding-bottom: var(--padding-27xl);
+		/* padding-bottom: var(--padding-27xl); */
 		box-sizing: border-box;
 	}
 	.frame-parent {
@@ -410,7 +409,13 @@
 		padding-bottom: var(--padding-27xl);
 		box-sizing: border-box;
 	}
+	#jobs button,
+	.card-pflege-body button,
+	.contact-button,.button-send-message {
+		width: 100%;
+	}
 	.kontakt2 {
 		font-size: var(--font-size-3xl);
 	}
+
 }

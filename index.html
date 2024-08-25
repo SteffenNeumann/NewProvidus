@@ -834,23 +834,48 @@
 							<p>Pflegedienst Providus, Haagerstr. 3, 85435 Erding</p>
 						</div>
 						<div class="name-email-input-frame">
-							<div class="input-field-nachricht">
+							<form
+								class="name-email-input-frame"
+								action="https://formsubmit.co/neumann-steffen@web.de"
+								method="POST">
+								<!-- <div class="h-contact"> Deine Anfrage</div> -->
+								<input type="hidden" name="_captcha" value="true" />
 								<div class="contact-input">
-									<input class="input-field" placeholder="Name" type="text" />
+									<!-- <label for="name">Dein Name:</label> -->
+									<input
+										class="input-field"
+										placeholder="Name"
+										type="text"
+										id="name"
+										name="name"
+										required />
 								</div>
 								<div class="contact-input">
-									<input class="input-field" placeholder="Email" type="text" />
+									<!-- <label for="email">Deine E-Mail:</label> -->
+									<input
+										class="input-field"
+										placeholder="Email"
+										type="email"
+										id="email"
+										name="email"
+										required />
 								</div>
+
+								<!-- <label for="message">Deine Nachricht:</label> -->
 								<textarea
 									class="contact-textarea"
 									placeholder="Nachricht"
 									rows="{10}"
-									cols="{31}">
-								</textarea>
-							</div>
-							<div class="contact-button">
-								<button class="button-send-message">Senden</button>
-							</div>
+									cols="{31}"
+									id="message"
+									name="message"
+									required></textarea>
+
+								<!-- <button class="formButton" type="submit">Absenden</button> -->
+								<div class="contact-button">
+									<button class="button-send-message">Senden</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
