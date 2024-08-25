@@ -288,6 +288,11 @@
 		/* padding-right: var(--padding-xl); */
 		box-sizing: border-box;
 	}
+
+	.section-description p,
+	.hero-h2 p {
+		text-align: center;
+	}
 	.cards-h1 {
 		font-size: var(--font-size-3xl);
 	}
