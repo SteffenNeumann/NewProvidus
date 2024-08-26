@@ -300,7 +300,7 @@ element.style {
 }
 .mysignature p:last-child {
 	font-family: "Reenie Beanie", cursive;
-	font-size: var(--font-x-large);
+	font-size: var(--font-large);
 }
 .mysignature p {
 	align-self: stretch;
@@ -2574,18 +2574,18 @@ button:hover span::after {
 	flex-shrink: 0;
 	max-width: 100%;
 }
-.fr-impressum,
+/* .fr-impressum,
 .header-frame {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
 	box-sizing: border-box;
-}
+} */
 .fr-impressum {
-	align-self: stretch;
+	/* align-self: stretch; */
 	background-color: #212322;
-	overflow: hidden;
+	/* overflow: hidden;
 	padding: 55px;
 	gap: 19px;
 	min-height: 250px;
@@ -2593,12 +2593,5 @@ button:hover span::after {
 	text-align: center;
 	font-size: var(--font-size-base);
 	color: var(--color-white);
-	font-family: var(--font-inter);
-}
-.header-frame {
-	width: 100%;
-	position: relative;
-	background-color: var(--color-white);
-	padding: 23px 0 0;
-	letter-spacing: normal;
+	font-family: var(--font-inter); */
 }

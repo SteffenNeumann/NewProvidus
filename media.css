@@ -289,6 +289,15 @@
 	.einfach-gut-helfen {
 		font-size: var(--font-size-lgi);
 	}
+	.mysignature p:last-child {
+		
+		font-size: var(--gap-15xlfont-medium);
+	}
+	.mysignature p {
+		
+		font-size: var(--font-size-sm);
+	
+	}
 	.wellcome-card {
 		/* padding-right: var(--padding-xl); */
 		box-sizing: border-box;
