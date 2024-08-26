@@ -1298,7 +1298,6 @@ button:hover span::after {
 	box-sizing: border-box;
 	flex-direction: column;
 	align-items: flex-end;
-
 	gap: 7px;
 }
 .contact-input {

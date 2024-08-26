@@ -220,17 +220,17 @@
 		padding-bottom: var(--padding-28xl);
 		box-sizing: border-box;
 	}
+	.popup {
+		width: 80vw;
+	}
 	#jobs .popup {
 		width: 70vw;
 		overflow-y: scroll;
 		height: 90vh;
-		
-		
 	}
 	#jobs .card-pflege-info {
 		background: rgba(255, 255, 255, 0.97);
 		transform: translate(-50%, -50%);
-		
 	}
 	.contact-card-details,
 	.name-email-input-frame {
@@ -290,13 +290,10 @@
 		font-size: var(--font-size-lgi);
 	}
 	.mysignature p:last-child {
-		
 		font-size: var(--gap-15xlfont-medium);
 	}
 	.mysignature p {
-		
 		font-size: var(--font-size-sm);
-	
 	}
 	.wellcome-card {
 		/* padding-right: var(--padding-xl); */
@@ -310,7 +307,7 @@
 	.cards-h1 {
 		font-size: var(--font-size-3xl);
 	}
-	
+
 	.ambulate {
 		font-size: var(--font-size-lgi);
 	}
@@ -416,11 +413,11 @@
 	}
 	#jobs button,
 	.card-pflege-body button,
-	.contact-button,.button-send-message {
+	.contact-button,
+	.button-send-message {
 		width: 100%;
 	}
 	.kontakt2 {
 		font-size: var(--font-size-3xl);
 	}
-
 }
