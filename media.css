@@ -221,10 +221,12 @@
 		box-sizing: border-box;
 	}
 	.popup {
-		width: 80vw;
+		width: 90vw;
+		overflow-y: scroll;
+		height: 90vh;
 	}
 	#jobs .popup {
-		width: 70vw;
+		width: 80vw;
 		overflow-y: scroll;
 		height: 90vh;
 	}
