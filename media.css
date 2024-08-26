@@ -221,10 +221,16 @@
 		box-sizing: border-box;
 	}
 	#jobs .popup {
-		width: 80vw;
-		height: 90vh;
-		/* transform: translate(-50%, -45%); */
+		width: 70vw;
 		overflow-y: scroll;
+		height: 90vh;
+		
+		
+	}
+	#jobs .card-pflege-info {
+		background: rgba(255, 255, 255, 0.97);
+		transform: translate(-50%, -50%);
+		
 	}
 	.contact-card-details,
 	.name-email-input-frame {
@@ -295,18 +301,7 @@
 	.cards-h1 {
 		font-size: var(--font-size-3xl);
 	}
-	/* .back,
-	.card-pflege-info {
-		backdrop-filter: blur(5);
-	}
-	.back {
-		background: rgba(145, 145, 145, 0);
-	} */
-	.card-pflege-info {
-		background: rgba(255, 255, 255, 0.97);
-		transform: translate(-50%, -50%);
-		width: 90vw;
-	}
+	
 	.ambulate {
 		font-size: var(--font-size-lgi);
 	}
@@ -404,6 +399,7 @@
 	.jobs1 {
 		font-size: var(--font-size-3xl);
 	}
+
 	.jobs {
 		padding-top: var(--padding-27xl);
 		padding-bottom: var(--padding-27xl);

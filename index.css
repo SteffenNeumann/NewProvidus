@@ -271,7 +271,7 @@ a {
 	font-family: inherit;
 }
 .willkommen-bei-providus {
-	font-family: Roboto;
+	font-family: var(--font-roboto);
 	font-size: 65px;
 	color: var(--color-mediumaquamarine-100);
 	/* height: 75px; */
@@ -280,7 +280,7 @@ a {
 	align-items: center;
 }
 .einfach-gut-helfen {
-	font-size: 32px;
+	font-size: var(--font-size-5xl);
 	font-weight: 300;
 	color: var(--color-white);
 }
@@ -314,24 +314,24 @@ a {
 }
 .mysignature p:last-child {
 	font-family: "Reenie Beanie", cursive;
+	font-size: var(--font-x-large);
 }
 .mysignature p {
 	align-self: stretch;
 	color: #fff;
 	text-align: right;
-	font-family: inherit;
-	font-size: var(--font-size-sm);
+	font-family: var(--font-roboto);
+	font-size: var(--font-size-base);
 	font-style: normal;
 	font-weight: 300;
 	line-height: 16px;
 	margin: 0;
-	/* line-height: normal; */
 }
 
 button {
 	display: inline-block;
 	position: relative;
-	font-size: var(--font-size-sm);
+	font-size: var(--font-size-base);
 	border: none;
 	border-radius: var(--br-4xs);
 	/* border: solid 1px #eee; */
@@ -343,9 +343,9 @@ button {
 span {
 	display: block;
 	/* position: relative; */
-	font-size: var(--font-size-sm);
+	font-size: var(---font-size-base);
 	font-weight: 100;
-	font-family: var(--font-inter);
+	font-family: var(--font-roboto);
 	color: var(--color-white);
 	/* text-align: center; */
 	padding: 15px 36px;
@@ -1214,7 +1214,6 @@ button:hover span::after {
 	width: 500px;
 	min-width: 400px;
 	z-index: 200;
-	/* height:50vh; */
 }
 #popupjobs p {
 	margin: 0px;
@@ -1284,7 +1283,7 @@ button:hover span::after {
 	max-width: 100%;
 	align-self: stretch;
 	flex-direction: row;
-	
+
 	gap: var(--gap-5xl);
 	text-align: left;
 	color: var(--color-silver-100);
@@ -1325,7 +1324,6 @@ button:hover span::after {
 	border: 1px solid var(--color-mediumaquamarine-200);
 	flex-direction: row;
 	padding: 24px var(--padding-3xs);
-	
 }
 .input-field-nachricht {
 	display: flex;
@@ -1351,20 +1349,19 @@ button:hover span::after {
 }
 
 .contact-textarea {
-  border: 1px solid var(--color-mediumaquamarine-200);
-  height: 195px;
-  width: 100%;
-  outline: 0;
-  align-self: stretch;
-  border-radius: var(--br-11xs);
-  box-sizing: border-box;
-  font-family: var(--font-inter);
-  font-size: var(--font-size-base);
-  text-align: left;
-  /* color: var(--color-silver-100); */
-  padding: 10px;
+	border: 1px solid var(--color-mediumaquamarine-200);
+	height: 195px;
+	width: 100%;
+	outline: 0;
+	align-self: stretch;
+	border-radius: var(--br-11xs);
+	box-sizing: border-box;
+	font-family: var(--font-inter);
+	font-size: var(--font-size-base);
+	text-align: left;
+	/* color: var(--color-silver-100); */
+	padding: 10px;
 }
-
 
 .senden {
 	position: relative;
@@ -1398,6 +1395,9 @@ button:hover span::after {
 	font-family: var(--font-inter);
 	color: var(--color-white);
 	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+		rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+		rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 .button-send-message:hover {
 	background-color: #5c8f6b;
