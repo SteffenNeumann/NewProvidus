@@ -36,10 +36,10 @@
 			crossorigin="anonymous" />
 
 		<!-- Optional: Bootstrap Icons -->
+		<link rel="stylesheet" href="./animate.min.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-		<link rel="stylesheet" href="./animate.min.css" />
 		<link rel="stylesheet" href="./global.css" />
 		<link rel="stylesheet" href="./index.css" />
 		<link rel="stylesheet" href="./media.css" />
@@ -270,7 +270,7 @@
 						</div>
 						<div class="cards">
 							<div class="cards-column">
-								<div class="left-upper">
+								<div class="left-upper reveal" data-animation="fadeInLeftFast2">
 									<div class="header1">
 										<img
 											class="vector-icon"
@@ -304,7 +304,9 @@
 								</div>
 							</div>
 							<div class="cards-column">
-								<div class="left-upper">
+								<div
+									class="left-upper reveal"
+									data-animation="slide-in-fwd-center1">
 									<div class="header1">
 										<img class="vector-icon" alt="" src="./public/doctor.svg" />
 										<h1 class="cards-content-h1">
@@ -324,7 +326,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="left-upper">
+								<div
+									class="left-upper reveal"
+									data-animation="slide-in-fwd-center2">
 									<div class="header1">
 										<img
 											class="vector-icon-large"
@@ -345,7 +349,7 @@
 								</div>
 							</div>
 							<div class="cards-column">
-								<div class="left-upper">
+								<div class="left-upper reveal" data-animation="fadeInRight">
 									<div class="header1">
 										<img
 											class="vector-icon"
@@ -381,7 +385,7 @@
 			<section id="pflege" class="section">
 				<div class="main-frame">
 					<div class="frame-header">
-						<div class="header fadeInLeft">
+						<div class="header">
 							<div class="line-3-2"></div>
 							<h1 class="cards-h1">PFLEGEGRADE INFORMATION</h1>
 							<div class="line-3-2"></div>
@@ -396,20 +400,21 @@
 							<p>
 								Die Pflegegrade reichen von 1 bis 5 und werden anhand eines
 								Begutachtungsverfahrens durch den Medizinischen Dienst der
-								Krankenversicherung (MDK) ermittelt.<br> Dabei werden körperliche,
-								geistige und psychische Beeinträchtigungen berücksichtigt. Je
-								höher der Pflegegrad, desto umfassender ist die benötigte
-								Unterstützung. Pflegegrade entscheiden über die Leistungen aus
-								der Pflegeversicherung, wie finanzielle Zuschüsse für ambulante
-								oder stationäre Pflege, Pflegehilfsmittel und pflegenahe
-								Umbauten im Wohnraum. Die Zuordnung zu einem Pflegegrad erfolgt
-								auf Basis des individuellen Bedarfs an Hilfe bei Aktivitäten des
-								täglichen Lebens.
+								Krankenversicherung (MDK) ermittelt.<br />
+								Dabei werden körperliche, geistige und psychische
+								Beeinträchtigungen berücksichtigt. Je höher der Pflegegrad,
+								desto umfassender ist die benötigte Unterstützung. Pflegegrade
+								entscheiden über die Leistungen aus der Pflegeversicherung, wie
+								finanzielle Zuschüsse für ambulante oder stationäre Pflege,
+								Pflegehilfsmittel und pflegenahe Umbauten im Wohnraum. Die
+								Zuordnung zu einem Pflegegrad erfolgt auf Basis des
+								individuellen Bedarfs an Hilfe bei Aktivitäten des täglichen
+								Lebens.
 							</p>
 						</div>
 					</div>
 					<div class="cards">
-						<div class="card1 fadeInLeft">
+						<div class="card1 reveal" data-animation="fadeInLeftSlow1">
 							<div class="card1-inner1">
 								<div class="image-1-parent">
 									<img
@@ -430,31 +435,9 @@
 										</button>
 									</div>
 								</div>
-								<div id="back1" class="back">
-									<div id="popup1" class="popup card-pflege-info">
-										<div class="card-pflege-more-header">
-											<h1>Pflegegrad 1</h1>
-											<div>12,5 bis 27 Punkte</div>
-										</div>
-										<div>
-											Der Pflegegrad 1 ist die niedrigste Stufe der
-											Pflegebedürftigkeit. Der Pflegegrad 1 wurde am 1.1.2017
-											neu eingeführt und wird Menschen zuteil, die bislang keine
-											Pflegestufe erhalten hatten. Diese Pflegestufe ist somit
-											völlig neu. Pflegebedürftige mit Pflegegrad 1 sind
-											lediglich gering in Ihrer Selbstständigkeit
-											beeinträchtigt. Menschen mit Pflegegrad 1 erhalten kein
-											Pflegegeld für die Pflege zu Hause, also weder
-											Pflegesachleistungen noch ambulante Geldleistungen.
-											Allerdings haben Sie einen Anspruch auf einen
-											zweckgebundenen ambulanten Entlastungsbetrag in Höhe von
-											125 € monatlich seitens der Pflegeversicherung.
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
-						<div class="card1">
+						<div class="card1 reveal" data-animation="fadeInLeftSlow">
 							<div class="card1-inner">
 								<div class="image-2-parent">
 									<img
@@ -475,32 +458,9 @@
 										</button>
 									</div>
 								</div>
-								<div id="back2" class="back">
-									<div id="popup2" class="popup card-pflege-info">
-										<div class="card-pflege-more-header">
-											<h1>Pflegegrad 2</h1>
-											<div>27 bis 47,5 Punkte</div>
-										</div>
-										<div>
-											In den Pflegegrad 2 werden alle Menschen eingestuft,
-											welche bisher in die Pflegestufen 0 und 1(ohne
-											eingeschränkte Alltagskompetenz) eingeteilt waren. In den
-											Pflegegrad 2 wird man eingeteilt, wenn man vom
-											Medizinischen Dienst der Krankenversicherung. zwischen 27
-											und &lt; 47,5 Punkten anerkannt bekommen hat. Werden
-											Pflegebedürftige mit Pflegegrad 2 von Privatpersonen
-											gepflegt, erhalten sie eine monatliche ambulante
-											Geldleistung von 316 €. Werden sie ambulant von einem
-											Pflegedienst gepflegt, erhalten sie ambulante
-											Sachleistungen bzw. Pflegesachleistungen in Höhe von 724
-											€. Bei Heimpflege erhalten sie stationäre Leistungsbeträge
-											in Höhe von 770
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
-						<div class="card1">
+						<div class="card1 reveal" data-animation="fadeInLeftFast2">
 							<div class="card1-inner1">
 								<div class="image-3-parent">
 									<img
@@ -521,31 +481,9 @@
 										</button>
 									</div>
 								</div>
-								<div id="back3" class="back">
-									<div id="popup3" class="popup card-pflege-info">
-										<div class="card-pflege-more-header">
-											<h1>Pflegegrad 3</h1>
-											<div>47,5 bis 70 Punkte</div>
-										</div>
-										<div>
-											Dem Pflegegrad 3 entsprechen die Pflegestufen 1 (mit
-											eingeschränkter Alltagskompetenz, also meist Demenz) und 2
-											(ohne eingeschränkte Alltagskompetenz). Den Pflegegrad 3
-											erhält man, wenn man 47,5 bis &lt; 70 Punkte vom
-											Medizinischen Dienst der Krankenversicherung zugeteilt
-											bekommt. Eine Pflegebedürftige Person mitPflegegrad 3
-											erhält durch die Pflegeversicherung entweder 545 €
-											Pflegegeld ambulant, wenn sie von Angehörigen gepflegt
-											wird oder 1.298 € Pflegesachleistungen ambulant, wenn ein
-											ambulanter Pflegedienst die Pflege übernimmt. Erfolgt die
-											Pflege in einem Heim, so werden 1.262 € monatlich von der
-											Pflegeversicherung bezahlt.
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
-						<div class="card1">
+						<div class="card1 reveal" data-animation="fadeInLeftFast1">
 							<div class="card1-inner1">
 								<div class="image-4-parent">
 									<img
@@ -570,31 +508,9 @@
 										</button>
 									</div>
 								</div>
-								<div id="back4" class="back">
-									<div id="popup4" class="popup card-pflege-info">
-										<div class="card-pflege-more-header">
-											<h1>Pflegegrad 4</h1>
-											<div>70,0 bis 90 Punkte</div>
-										</div>
-										<div>
-											Menschen, die Leistungen der Pflegestufe 2 und 3 in
-											Anspruch genommen hatten, werden nun dem Pflegegrad 4
-											zugeteilt. Den Pflegegrad 4 erhält eine pflegebedürftige
-											Person, wenn der Medizinische Dienst der
-											Krankenversicherung 70 bis &lt 90 Punkte vergibt. Ein
-											Pflegebedürftiger mit Pflegegrad 4 erhält ambulantes
-											Pflegegeld in Höhe von 728 €, wenn er zu Hause von
-											Angehörigen gepflegt wird. Ambulante Sachleistungen in
-											Höhe von 1.612 € erhält der Pflegebedürftige, wenn er in
-											häuslicher Umgebung von einem ambulanten Pflegedienst
-											gepflegt wird.Der stationäre Leistungsbetrag beträgt 1.775
-											€.
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
-						<div class="card1">
+						<div class="card1 reveal" data-animation="fadeInLeftFast">
 							<div class="card1-inner1">
 								<div class="image-5-parent">
 									<img
@@ -620,31 +536,112 @@
 										</button>
 									</div>
 								</div>
-								<div id="back5" class="back">
-									<div id="popup5" class="popup card-pflege-info">
-										<div class="card-pflege-more-header">
-											<h1>Pflegegrad 5</h1>
-											<div>90,0 bis 100 Punkte</div>
-										</div>
-										<div>
-											Pflegegrad 5 ist die höchste Stufe der Pflegebedürftigkeit
-											und erfordert eine intensive 24-Stunden-Pflege. Menschen,
-											die zuvor in die Kategorie „Härtefall“ fielen oder der
-											Pflegestufe 3 mit eingeschränkter Alltagskompetenz
-											entsprachen, können diesen Grad erhalten. Es gibt keinen
-											Unterschied in der Art der Pflegeleistungen für Menschen
-											mit oder ohne eingeschränkte kognitive Fähigkeiten. Bei
-											Pflege durch Angehörige gibt es monatlich 901 €
-											Pflegegeld, während professionelle Pflegedienste monatlich
-											1.995 € kosten. Stationäre Pflege in einem Pflegeheim
-											kostet monatlich 2.005 €, jedoch muss ein Eigenanteil
-											gezahlt werden. Zusätzlich haben Pflegebedürftige mit
-											Pflegegrad 5 Anspruch auf zweckgebundene Betreuungs- und
-											Entlastungsleistungen.
-										</div>
-									</div>
-								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				<!-- BACKCONTAINER -->
+				<div id="back1" class="back">
+					<div id="popup1" class="popup card-pflege-info">
+						<div class="card-pflege-more-header">
+							<h1>Pflegegrad 1</h1>
+							<div>12,5 bis 27 Punkte</div>
+						</div>
+						<div>
+							Der Pflegegrad 1 ist die niedrigste Stufe der Pflegebedürftigkeit.
+							Der Pflegegrad 1 wurde am 1.1.2017 neu eingeführt und wird
+							Menschen zuteil, die bislang keine Pflegestufe erhalten hatten.
+							Diese Pflegestufe ist somit völlig neu. Pflegebedürftige mit
+							Pflegegrad 1 sind lediglich gering in Ihrer Selbstständigkeit
+							beeinträchtigt. Menschen mit Pflegegrad 1 erhalten kein Pflegegeld
+							für die Pflege zu Hause, also weder Pflegesachleistungen noch
+							ambulante Geldleistungen. Allerdings haben Sie einen Anspruch auf
+							einen zweckgebundenen ambulanten Entlastungsbetrag in Höhe von 125
+							€ monatlich seitens der Pflegeversicherung.
+						</div>
+					</div>
+				</div>
+				<div id="back2" class="back">
+					<div id="popup2" class="popup card-pflege-info">
+						<div class="card-pflege-more-header">
+							<h1>Pflegegrad 2</h1>
+							<div>27 bis 47,5 Punkte</div>
+						</div>
+						<div>
+							In den Pflegegrad 2 werden alle Menschen eingestuft, welche bisher
+							in die Pflegestufen 0 und 1(ohne eingeschränkte Alltagskompetenz)
+							eingeteilt waren. In den Pflegegrad 2 wird man eingeteilt, wenn
+							man vom Medizinischen Dienst der Krankenversicherung. zwischen 27
+							und &lt; 47,5 Punkten anerkannt bekommen hat. Werden
+							Pflegebedürftige mit Pflegegrad 2 von Privatpersonen gepflegt,
+							erhalten sie eine monatliche ambulante Geldleistung von 316 €.
+							Werden sie ambulant von einem Pflegedienst gepflegt, erhalten sie
+							ambulante Sachleistungen bzw. Pflegesachleistungen in Höhe von 724
+							€. Bei Heimpflege erhalten sie stationäre Leistungsbeträge in Höhe
+							von 770
+						</div>
+					</div>
+				</div>
+				<div id="back3" class="back">
+					<div id="popup3" class="popup card-pflege-info">
+						<div class="card-pflege-more-header">
+							<h1>Pflegegrad 3</h1>
+							<div>47,5 bis 70 Punkte</div>
+						</div>
+						<div>
+							Dem Pflegegrad 3 entsprechen die Pflegestufen 1 (mit
+							eingeschränkter Alltagskompetenz, also meist Demenz) und 2 (ohne
+							eingeschränkte Alltagskompetenz). Den Pflegegrad 3 erhält man,
+							wenn man 47,5 bis &lt; 70 Punkte vom Medizinischen Dienst der
+							Krankenversicherung zugeteilt bekommt. Eine Pflegebedürftige
+							Person mitPflegegrad 3 erhält durch die Pflegeversicherung
+							entweder 545 € Pflegegeld ambulant, wenn sie von Angehörigen
+							gepflegt wird oder 1.298 € Pflegesachleistungen ambulant, wenn ein
+							ambulanter Pflegedienst die Pflege übernimmt. Erfolgt die Pflege
+							in einem Heim, so werden 1.262 € monatlich von der
+							Pflegeversicherung bezahlt.
+						</div>
+					</div>
+				</div>
+				<div id="back4" class="back">
+					<div id="popup4" class="popup card-pflege-info">
+						<div class="card-pflege-more-header">
+							<h1>Pflegegrad 4</h1>
+							<div>70,0 bis 90 Punkte</div>
+						</div>
+						<div>
+							Menschen, die Leistungen der Pflegestufe 2 und 3 in Anspruch
+							genommen hatten, werden nun dem Pflegegrad 4 zugeteilt. Den
+							Pflegegrad 4 erhält eine pflegebedürftige Person, wenn der
+							Medizinische Dienst der Krankenversicherung 70 bis &lt 90 Punkte
+							vergibt. Ein Pflegebedürftiger mit Pflegegrad 4 erhält ambulantes
+							Pflegegeld in Höhe von 728 €, wenn er zu Hause von Angehörigen
+							gepflegt wird. Ambulante Sachleistungen in Höhe von 1.612 € erhält
+							der Pflegebedürftige, wenn er in häuslicher Umgebung von einem
+							ambulanten Pflegedienst gepflegt wird.Der stationäre
+							Leistungsbetrag beträgt 1.775 €.
+						</div>
+					</div>
+				</div>
+				<div id="back5" class="back">
+					<div id="popup5" class="popup card-pflege-info">
+						<div class="card-pflege-more-header">
+							<h1>Pflegegrad 5</h1>
+							<div>90,0 bis 100 Punkte</div>
+						</div>
+						<div>
+							Pflegegrad 5 ist die höchste Stufe der Pflegebedürftigkeit und
+							erfordert eine intensive 24-Stunden-Pflege. Menschen, die zuvor in
+							die Kategorie „Härtefall“ fielen oder der Pflegestufe 3 mit
+							eingeschränkter Alltagskompetenz entsprachen, können diesen Grad
+							erhalten. Es gibt keinen Unterschied in der Art der
+							Pflegeleistungen für Menschen mit oder ohne eingeschränkte
+							kognitive Fähigkeiten. Bei Pflege durch Angehörige gibt es
+							monatlich 901 € Pflegegeld, während professionelle Pflegedienste
+							monatlich 1.995 € kosten. Stationäre Pflege in einem Pflegeheim
+							kostet monatlich 2.005 €, jedoch muss ein Eigenanteil gezahlt
+							werden. Zusätzlich haben Pflegebedürftige mit Pflegegrad 5
+							Anspruch auf zweckgebundene Betreuungs- und Entlastungsleistungen.
 						</div>
 					</div>
 				</div>
@@ -654,41 +651,47 @@
 			<section id="about" class="section">
 				<div class="main-frame about-background">
 					<div class="frame-header">
-						<div class="header fadeInLeft">
+						<div class="header">
 							<div class="line-3-2"></div>
 							<h1 class="cards-h1">ÜBER UNS</h1>
 							<div class="line-3-2"></div>
 						</div>
 						<div class="section-description">
 							<p>
-								Willkommen bei Pflegedienst PROVIDUS 
-								- Ihrem einfühlsamen
-								Begleiter für maßgeschneiderte Pflege und Betreuung.</p>
-							
+								Willkommen bei Pflegedienst PROVIDUS - Ihrem einfühlsamen
+								Begleiter für maßgeschneiderte Pflege und Betreuung.
+							</p>
+
 							<p>
 								Seit unserer Gründung im Februar 2009 vereinen wir jahrelange
 								Erfahrung aus verschiedensten Bereichen der Pflege und Medizin.
 								Diese Expertise nutzen wir mit Leidenschaft, um Ihnen eine
 								Betreuung zu bieten, die weit über das Gewöhnliche hinausgeht.
-								</p>		
-								<p>Unser Ansatz ist geprägt von Individualität und Nähe. Wir hören
+							</p>
+							<p>
+								Unser Ansatz ist geprägt von Individualität und Nähe. Wir hören
 								Ihnen zu, verstehen Ihre Bedürfnisse und arbeiten eng mit Ihnen
 								und Ihren Angehörigen zusammen, um Lösungen zu finden, die genau
-								auf Ihre Situation zugeschnitten sind.<br> Durch kontinuierliche
-								Fort- und Weiterbildungen stellen wir sicher, dass unser Team
-								stets auf dem neuesten Stand ist und Ihnen die bestmögliche
-								Betreuung bieten kann. Unser eingespieltes Team zeichnet sich
-								durch Mobilität, Flexibilität und eine außergewöhnliche
-								Lösungsorientierung aus.<p>Pflegedienst PROVIDUS - Ihr Partner
-								fürsorglicher Betreuung!<p> Kontaktieren Sie uns noch heute und
-								erleben Sie, wie wir mit Empathie und Fachkompetenz für Ihr
-								Wohlbefinden sorgen. Ihr verlässliches Pflegedienst PROVIDUS
-								Team - Für den Landkreis Erding.
+								auf Ihre Situation zugeschnitten sind.<br />
+								Durch kontinuierliche Fort- und Weiterbildungen stellen wir
+								sicher, dass unser Team stets auf dem neuesten Stand ist und
+								Ihnen die bestmögliche Betreuung bieten kann. Unser
+								eingespieltes Team zeichnet sich durch Mobilität, Flexibilität
+								und eine außergewöhnliche Lösungsorientierung aus.
+							</p>
+							<p>
+								Pflegedienst PROVIDUS - Ihr Partner fürsorglicher Betreuung!
+							</p>
+							<p>
+								Kontaktieren Sie uns noch heute und erleben Sie, wie wir mit
+								Empathie und Fachkompetenz für Ihr Wohlbefinden sorgen. Ihr
+								verlässliches Pflegedienst PROVIDUS Team - Für den Landkreis
+								Erding.
 							</p>
 						</div>
 					</div>
 
-					<div class="staff1">
+					<div class="staff1 reveal" data-animation="fadeInUp">
 						<img
 							class="team-img2-1-icon"
 							loading="eager"
@@ -717,7 +720,9 @@
 					</div>
 
 					<div class="frame-cards-jobs">
-						<div class="single-card-jobs">
+						<div
+							class="single-card-jobs reveal"
+							data-animation="fadeInLeftFast2">
 							<p class="header-stellen">Ihr Profil</p>
 							<ul class="stellen-list">
 								<li>
@@ -739,7 +744,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="single-card-jobs">
+						<div class="single-card-jobs reveal" data-animation="fadeInUp">
 							<p class="header-stellen">Ihre Aufgaben</p>
 
 							<ul class="stellen-list">
@@ -754,7 +759,7 @@
 								<li>Fachliche Anleitung von Pflegehilfskräften und Azubis</li>
 							</ul>
 						</div>
-						<div class="single-card-jobs">
+						<div class="single-card-jobs reveal" data-animation="fadeInRight">
 							<p class="header-stellen">Das erwartet Sie</p>
 							<ul class="stellen-list">
 								<li>Ein familäres Team mit flachen Hirachien</li>
@@ -985,37 +990,6 @@
 			};
 		</script>
 		<script async>
-			let slideIndex = 1;
-			showSlides(slideIndex);
-
-			function plusSlides(n) {
-				showSlides((slideIndex += n));
-			}
-
-			function currentSlide(n) {
-				showSlides((slideIndex = n));
-			}
-
-			function showSlides(n) {
-				let i;
-				let slides = document.getElementsByClassName("mySlides");
-				let dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {
-					slideIndex = 1;
-				}
-				if (n < 1) {
-					slideIndex = slides.length;
-				}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex - 1].style.display = "block";
-				dots[slideIndex - 1].className += " active";
-			}
-
 			function reveal() {
 				var reveals = document.querySelectorAll(".reveal");
 
@@ -1025,38 +999,16 @@
 					var elementVisible = 150;
 
 					if (elementTop < windowHeight - elementVisible) {
-						reveals[i].classList.add("active");
+						var animation = reveals[i].getAttribute("data-animation");
+						reveals[i].classList.add(animation, "active");
 					} else {
-						reveals[i].classList.remove("active");
+						var animation = reveals[i].getAttribute("data-animation");
+						reveals[i].classList.remove(animation, "active");
 					}
 				}
 			}
 
 			window.addEventListener("scroll", reveal);
-		</script>
-		<script>
-			function scrollToFrameBesterService() {
-				document
-					.getElementById("frameBesterService")
-					.scrollIntoView({ behavior: "smooth" });
-			}
-			function scrollToFrameKontakt() {
-				document
-					.getElementById("contact")
-					.scrollIntoView({ behavior: "smooth" });
-			}
-
-			var frameBesterService = document.getElementById("frameBesterService");
-			if (frameBesterService) {
-				frameBesterService.addEventListener("click", function () {
-					var anchor = document.querySelector(
-						"[data-scroll-to='frameBesterService']"
-					);
-					if (anchor) {
-						anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-					}
-				});
-			}
 		</script>
 
 		<script>
@@ -1076,6 +1028,7 @@
 				});
 			}
 		</script>
+
 		<!-- !SECTION  -->
 	</body>
 </html>
