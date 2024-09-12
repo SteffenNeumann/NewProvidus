@@ -63,7 +63,6 @@ html {
 	animation: kenburns-top 5s ease-out both;
 }
 
-
 .shadow-drop-center {
 	animation: shadow-drop-center 0.4s linear both;
 }
@@ -1038,6 +1037,7 @@ button:hover span::after {
 	gap: var(--gap-mini);
 	white-space: nowrap;
 	z-index: 2;
+	transition: all 0.2s ease-in-out;
 }
 .card-pflege-body button img {
 	height: 40px;
@@ -1060,8 +1060,9 @@ button:hover span::after {
 	text-align: center;
 	z-index: 1;
 }
-.card-pflege-body button:hover{
+.card-pflege-body button:hover {
 	animation: shadow-drop-center 0.4s linear both;
+	transform: scale(1.1);
 }
 .back {
 	display: none;
@@ -1262,12 +1263,15 @@ button:hover span::after {
 	gap: var(--gap-mini);
 	white-space: nowrap;
 	z-index: 2;
+	transition: all 0.2s ease-in-out;
+	margin-bottom: 20px;
 }
 #jobs button span {
 	color: var(--color-black);
 }
 #jobs button:hover {
 	animation: shadow-drop-center 0.4s linear both;
+	transform: scale(1.1);
 }
 #jobs .popup {
 	width: 500px;
@@ -1457,9 +1461,16 @@ button:hover span::after {
 		rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
 		rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-.button-send-message:hover {
-	animation: shadow-drop-center 0.4s linear both;
+.contact-button button {
+	transition: all 0.2s ease-in-out;
 }
+.contact-button button:hover {
+	/* animation: shadow-drop-center 0.4s linear both; */
+	transform: scale(1.1);
+}
+/* .button-send-message:hover {
+	animation: shadow-drop-center 0.4s linear both;
+} */
 
 /* !SECTION: Contact */
 .header-frame1,
